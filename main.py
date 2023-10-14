@@ -5,6 +5,11 @@ from collections import *
 import os
 import argparse
 
+def getMin(x,y):
+    if x < y:
+        return x
+    else:
+        return y
 def calculateDestinationMAC(packet):
     packetBytes = bytes(packet)
     destinationMAC = packetBytes[0:6]
@@ -96,7 +101,17 @@ def calculateIPv4destination(packet):
     frameBytes = packetBytes[30:34]
     destination = '.'.join(f'{byte}' for byte in frameBytes)
     return destination
-
+def readdectxt(filename):
+    decimalMap = {}
+    with open(filename, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if line:
+                buffer = line.split(': ')
+                if len(buffer) == 2:
+                    number, name = int(buffer[0]), buffer[1]
+                    decimalMap[number] = name
+    return decimalMap
 def readtxt(filename):
     etherTypeMap = {}
     with open(filename, 'r') as file:
@@ -108,6 +123,20 @@ def readtxt(filename):
                     number, name = int(buffer[0], 16), buffer[1]
                     etherTypeMap[number] = name
     return etherTypeMap
+
+def calculateIPsourceport(packet):
+    packetBytes = bytes(packet)
+    ipHeader = (packetBytes[14] & 0x0F) * 4  # hlavicka moze byt dlha 5-15 (20B-60B) slov, kazde slovo ma 4B
+    frameBytes = packetBytes[ipHeader +14:ipHeader + 16]
+    sourceport = int.from_bytes(frameBytes, byteorder='big')
+    return sourceport
+
+def calculateIPdestinationport(packet):
+    packetBytes = bytes(packet)
+    ipHeader = (packetBytes[14] & 0x0F) * 4  # hlavicka moze byt dlha 5-15 (20B-60B) slov, kazde slovo ma 4B
+    frameBytes = packetBytes[ipHeader + 16:ipHeader + 18]
+    destinationport = int.from_bytes(frameBytes, byteorder='big')
+    return destinationport
 
 
 def main ():
@@ -147,6 +176,7 @@ def main ():
                     'filtrated_packets': []
                 }
                 for packet in filtratedPackets:
+                    packetBytes = bytes(packet)
                     frame = OrderedDict()  # na udrzanie poradia
                     frame['frame_number'] = filterCounter
                     frame['len_frame_pcap'] = calculateFrameLength(packet)
@@ -160,25 +190,46 @@ def main ():
                         frame['destination_ip'] = calculateIPv4destination(packet)
                         if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
                             frame['protocol'] = calculateIPv4protocol(packet)
-                            senders[frame['source_ip']] += 1  # pridanie do slovnika, vyuzitie defaultdict
+                            if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
+                                frame['src_port'] = calculateIPsourceport(packet)
+                                frame['dst_port'] = calculateIPdestinationport(packet)
+                                if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(
+                                        calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
+                                    appProtocol = getMin(calculateIPsourceport(packet),
+                                                         calculateIPdestinationport(packet))
+                                elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(
+                                        calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
+                                    appProtocol = calculateIPsourceport(packet)
+                                elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(
+                                        calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
+                                    appProtocol = calculateIPdestinationport(packet)
+                                else:
+                                    appProtocol = 0
 
-                    if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(
-                            packet) == 'IEEE 802.3 LLC'):
+                                frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
+
+
+                    if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(packet) == 'IEEE 802.3 LLC'):
                         frame['dsap'] = calculateServiceAccessPoint(packet, False)
                         frame['ssap'] = calculateServiceAccessPoint(packet, True)
                     if calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP':
                         frame['pid'] = calculateProtocolID(packet)
+
+
+                    hexaGulas = ' '.join([f'{byte:02X}' for byte in packetBytes])  # https://stackoverflow.com/questions/49597486/convert-bytes-to-hexadecimal-in-python
+                    hexRows = ''.join([hexaGulas[i:i + 48] for i in range(0, len(hexaGulas), 48)])
+
+                    frame['hexa_frame'] = ruamel.yaml.scalarstring.PreservedScalarString(hexRows)
+                    frame['hexa_frame'] = hexRows
+
                     filterCounter += 1
                     filtratedOutput['filtrated_packets'].append(frame)
-
                 with open('filter.yaml', 'w') as yaml_file:
                     yaml.dump(filtratedOutput, yaml_file, default_flow_style=False, Dumper=yaml.Dumper)
             else:
                 print('No packets with specified protocol')
         else:
             print('Invalid protocol')
-
-
 
 
     # ---------frame section------------
@@ -199,6 +250,20 @@ def main ():
             if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
                 frame['protocol'] = calculateIPv4protocol(packet)
                 senders[frame['source_ip']] += 1  # pridanie do slovnika, vyuzitie defaultdict
+                if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
+                    frame['src_port'] = calculateIPsourceport(packet)
+                    frame['dst_port'] = calculateIPdestinationport(packet)
+                    if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
+                        appProtocol = getMin(calculateIPsourceport(packet), calculateIPdestinationport(packet))
+                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
+                        appProtocol = calculateIPsourceport(packet)
+                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
+                        appProtocol = calculateIPdestinationport(packet)
+                    else:
+                        appProtocol = 0
+
+
+                    frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
 
         if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(packet) == 'IEEE 802.3 LLC'):
             frame['dsap'] = calculateServiceAccessPoint(packet, False)
@@ -220,6 +285,7 @@ def main ():
 
         frame['hexa_frame'] = hexRows
         printer['packets'].append(frame)
+        # print out the packets
         packetCounter += 1
 
 
@@ -246,8 +312,7 @@ def main ():
         yaml.dump(info, yaml_file, default_flow_style=False, Dumper = yaml.Dumper)
         yaml.dump(printer, yaml_file, default_flow_style=False, Dumper = yaml.Dumper)
         yaml.dump(senderPrint, yaml_file, default_flow_style=False, Dumper = yaml.Dumper)
-    #with open('filter.yaml', 'w') as yaml_file:
-        #yaml.dump(filtrated, yaml_file, default_flow_style=False, Dumper = yaml.Dumper)
+
 
     yaml_file.close()
 
@@ -258,6 +323,8 @@ saptxt = '/Users/michalhlinka/PycharmProjects/pythonProject1/saptxt'
 sapMap = readtxt(saptxt)
 ipv4txt = '/Users/michalhlinka/PycharmProjects/pythonProject1/ipv4txt'
 ipv4Map = readtxt(ipv4txt)
+apptxt = '/Users/michalhlinka/PycharmProjects/pythonProject1/appprotocol'
+appMap = readdectxt(apptxt)
 main()
 
 #tato cast krasne vypise hexa_frame, v yaml to nefunguje

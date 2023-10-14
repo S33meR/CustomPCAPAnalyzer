@@ -121,6 +121,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 54684
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 37 04 46 00 00
       01 11 AC 5F 0A 14 1E 01 E0 00 00 FC D5 9C 14 EB 00 23 09 46 91 92 00 00 00 01
       00 00 00 00 00 00 09 62 6F 6F 74 7A 69 6C 6C 61 00 00 01 00 01
@@ -135,6 +138,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 54684
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 37 04 47 00 00
       01 11 AC 5E 0A 14 1E 01 E0 00 00 FC D5 9C 14 EB 00 23 09 46 91 92 00 00 00 01
       00 00 00 00 00 00 09 62 6F 6F 74 7A 69 6C 6C 61 00 00 01 00 01
@@ -149,6 +155,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 48 00 00
       80 11 E5 2F 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 20 01 10 00 01
       00 00 00 00 00 00 20 45 43 45 50 45 50 46 45 46 4B 45 4A 45 4D 45 4D 45 42 43
@@ -164,6 +173,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 49 00 00
       80 11 E5 2E 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 20 01 10 00 01
       00 00 00 00 00 00 20 45 43 45 50 45 50 46 45 46 4B 45 4A 45 4D 45 4D 45 42 43
@@ -191,6 +203,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 4A 00 00
       80 11 E5 2D 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 20 01 10 00 01
       00 00 00 00 00 00 20 45 43 45 50 45 50 46 45 46 4B 45 4A 45 4D 45 4D 45 42 43
@@ -378,6 +393,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 45 04 4B 00 00
       FF 11 AE 4C 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 31 09 53 00 00 00 00 00 01
       00 00 00 00 00 00 0C 5F 73 6C 65 65 70 2D 70 72 6F 78 79 04 5F 75 64 70 05 6C
@@ -466,6 +484,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 ED 04 4C 00 00
       FF 11 AD A3 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 D9 09 FB 00 00 84 00 00 00
       00 04 00 00 00 01 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 01 80 01
@@ -661,6 +682,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61761
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 4D 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 41 00 01 00 BF 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -731,6 +755,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 4D 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -786,6 +813,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63809
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 4D 20 00
       FF 01 40 AD 0A 14 1E FE 0A 14 1E 01 00 00 F9 41 00 01 00 BF 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -856,6 +886,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 4D 00 B9
       FF 01 61 7C 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -911,6 +944,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61760
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 4E 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 40 00 01 00 C0 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -981,6 +1017,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 4E 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1036,6 +1075,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63808
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 4E 20 00
       FF 01 40 AC 0A 14 1E FE 0A 14 1E 01 00 00 F9 40 00 01 00 C0 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1106,6 +1148,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 4E 00 B9
       FF 01 61 7B 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1173,6 +1218,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61759
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 4F 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3F 00 01 00 C1 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1243,6 +1291,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 4F 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1298,6 +1349,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63807
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 4F 20 00
       FF 01 40 AB 0A 14 1E FE 0A 14 1E 01 00 00 F9 3F 00 01 00 C1 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1368,6 +1422,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 4F 00 B9
       FF 01 61 7A 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1423,6 +1480,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61758
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 50 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3E 00 01 00 C2 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1493,6 +1553,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 50 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1548,6 +1611,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63806
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 50 20 00
       FF 01 40 AA 0A 14 1E FE 0A 14 1E 01 00 00 F9 3E 00 01 00 C2 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1618,6 +1684,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 50 00 B9
       FF 01 61 79 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1673,6 +1742,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 138
+  - dst_port: 138
+  - app_protocol: NETBIOS-DGM
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 ED 04 51 00 00
       80 11 E4 87 0A 14 1E 01 0A 14 1E FF 00 8A 00 8A 00 D9 52 12 11 0E 93 23 0A 14
       1E 01 00 8A 00 C3 00 00 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43
@@ -1730,6 +1802,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61757
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 52 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3D 00 01 00 C3 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1800,6 +1875,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 52 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1855,6 +1933,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63805
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 52 20 00
       FF 01 40 A8 0A 14 1E FE 0A 14 1E 01 00 00 F9 3D 00 01 00 C3 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -1925,6 +2006,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 52 00 B9
       FF 01 61 77 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -1980,6 +2064,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61756
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 53 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3C 00 01 00 C4 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2050,6 +2137,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 53 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2105,6 +2195,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63804
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 53 20 00
       FF 01 40 A7 0A 14 1E FE 0A 14 1E 01 00 00 F9 3C 00 01 00 C4 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2175,6 +2268,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 53 00 B9
       FF 01 61 76 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2242,6 +2338,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61755
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 54 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3B 00 01 00 C5 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2312,6 +2411,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 54 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2367,6 +2469,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63803
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 54 20 00
       FF 01 40 A6 0A 14 1E FE 0A 14 1E 01 00 00 F9 3B 00 01 00 C5 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2437,6 +2542,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 54 00 B9
       FF 01 61 75 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2505,6 +2613,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61754
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 55 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 3A 00 01 00 C6 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2575,6 +2686,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 55 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2630,6 +2744,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63802
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 55 20 00
       FF 01 40 A5 0A 14 1E FE 0A 14 1E 01 00 00 F9 3A 00 01 00 C6 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2700,6 +2817,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 55 00 B9
       FF 01 61 74 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2794,6 +2914,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61753
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 56 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 39 00 01 00 C7 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2864,6 +2987,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 56 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -2919,6 +3045,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63801
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 56 20 00
       FF 01 40 A4 0A 14 1E FE 0A 14 1E 01 00 00 F9 39 00 01 00 C7 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -2989,6 +3118,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 56 00 B9
       FF 01 61 73 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -3068,6 +3200,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 2048
+  - dst_port: 61752
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 05 DC 04 57 20 00
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 08 00 F1 38 00 01 00 C8 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -3138,6 +3273,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.254
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 16 47 02 24 40 00 10 18 33 CF 44 08 00 45 00 04 54 04 57 00 B9
       80 01 00 00 0A 14 1E 01 0A 14 1E FE 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -3193,6 +3331,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 0
+  - dst_port: 63800
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 05 DC 04 57 20 00
       FF 01 40 A3 0A 14 1E FE 0A 14 1E 01 00 00 F9 38 00 01 00 C8 61 62 63 64 65 66
       67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69
@@ -3263,6 +3404,9 @@ packets:
   - source_ip: 10.20.30.254
   - destination_ip: 10.20.30.1
   - protocol: ICMP
+  - src_port: 24930
+  - dst_port: 25444
+  - app_protocol: Unknown
   - hexa_frame: 00 10 18 33 CF 44 00 16 47 02 24 40 08 00 45 00 04 54 04 57 00 B9
       FF 01 61 72 0A 14 1E FE 0A 14 1E 01 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E
       6F 70 71 72 73 74 75 76 77 61 62 63 64 65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71
@@ -3318,6 +3462,9 @@ packets:
   - source_ip: 0.0.0.0
   - destination_ip: 255.255.255.255
   - protocol: UDP
+  - src_port: 68
+  - dst_port: 67
+  - app_protocol: DHCP
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 01 4E 04 62 00 00
       80 11 35 3E 00 00 00 00 FF FF FF FF 00 44 00 43 01 3A 01 4B 01 01 06 00 F0 BC
       1E F2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 18 33
@@ -3391,6 +3538,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 63745
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 64 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 F9 01 00 00 00 01 04 00
       00 00 E0 00 00 FC
@@ -3405,6 +3555,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 59907
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 65 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 EA 03 00 00 00 01 04 00
       00 00 EF FF FF FA
@@ -3419,6 +3572,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 66 00 00
       01 11 9C D7 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -3437,6 +3593,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 59897
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 67 00 00
       01 11 AC 41 0A 14 1E 01 E0 00 00 FC E9 F9 14 EB 00 20 09 43 64 D7 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -3451,6 +3610,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 59897
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 68 00 00
       01 11 AC 40 0A 14 1E 01 E0 00 00 FC E9 F9 14 EB 00 20 09 43 64 D7 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -3478,6 +3640,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 1286
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 30 04 69 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 05 06 00 00 00 02 04 00
       00 00 E0 00 00 FC 04 00 00 00 EF FF FF FA
@@ -3555,6 +3720,9 @@ packets:
   - source_ip: 0.0.0.0
   - destination_ip: 255.255.255.255
   - protocol: UDP
+  - src_port: 68
+  - dst_port: 67
+  - app_protocol: DHCP
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 01 4E 04 6A 00 00
       80 11 35 36 00 00 00 00 FF FF FF FF 00 44 00 43 01 3A 01 4B 01 01 06 00 F0 BC
       1E F2 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 18 33
@@ -3592,6 +3760,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 64001
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 6C 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 FA 01 00 00 00 01 03 00
       00 00 E0 00 00 FC
@@ -3618,6 +3789,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 63745
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 6E 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 F9 01 00 00 00 01 04 00
       00 00 E0 00 00 FC
@@ -3644,6 +3818,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 6F 00 00
       80 11 E4 F6 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 31 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3660,6 +3837,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 70 00 00
       80 11 E4 F5 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 32 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3676,6 +3856,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 71 00 00
       80 11 E4 F4 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 33 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -3692,6 +3875,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 63745
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 73 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 F9 01 00 00 00 01 04 00
       00 00 E0 00 00 FC
@@ -3718,6 +3904,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 62631
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 74 00 00
       01 11 AC 34 0A 14 1E 01 E0 00 00 FC F4 A7 14 EB 00 20 09 43 44 05 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -3732,6 +3921,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 75 00 00
       80 11 E4 F0 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 33 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -3748,6 +3940,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 76 00 00
       80 11 E4 EF 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 32 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3764,6 +3959,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 77 00 00
       80 11 E4 EE 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 31 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3780,6 +3978,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 62631
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 78 00 00
       01 11 AC 30 0A 14 1E 01 E0 00 00 FC F4 A7 14 EB 00 20 09 43 44 05 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -3806,6 +4007,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 7A 00 00
       80 11 E4 FD 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 35 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -3821,6 +4025,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 7B 00 00
       01 11 9C C2 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -3839,6 +4046,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 97 04 7C 00 00
       01 11 9C CB 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 83 18 A4 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -3857,6 +4067,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 99 04 7D 00 00
       01 11 9C C8 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 85 18 A6 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -3875,6 +4088,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 7E 00 00
       01 11 9C BF 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -3893,6 +4109,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 7F 00 00
       80 11 E4 E6 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 31 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3909,6 +4128,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 80 00 00
       80 11 E4 E5 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 32 29 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -3925,6 +4147,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 81 00 00
       80 11 E4 E4 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 33 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -3941,6 +4166,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 82 00 00
       80 11 E4 F5 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 35 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -3968,6 +4196,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 63746
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 83 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 F9 02 00 00 00 01 04 00
       00 00 E0 00 00 FB
@@ -3982,6 +4213,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 84 00 00
       01 11 9C B9 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4000,6 +4234,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 45 04 85 00 00
       FF 11 AE 12 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 31 09 53 00 00 00 00 00 01
       00 00 00 00 00 00 0C 5F 73 6C 65 65 70 2D 70 72 6F 78 79 04 5F 75 64 70 05 6C
@@ -4015,6 +4252,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 86 00 00
       80 11 E4 DF 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 33 28 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -4031,6 +4271,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 87 00 00
       80 11 E4 DE 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 32 28 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -4047,6 +4290,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 88 00 00
       80 11 E4 DD 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 31 28 10 00 01
       00 00 00 00 00 01 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43 41 43
@@ -4063,6 +4309,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 6E 04 89 00 00
       FF 11 AD E5 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 5A 09 7C 00 00 00 00 00 02
       00 00 00 02 00 00 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 FF 80 01
@@ -4079,6 +4328,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.22
   - protocol: IGMP
+  - src_port: 8704
+  - dst_port: 63746
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 16 00 10 18 33 CF 44 08 00 46 00 00 28 04 8A 00 00
       01 02 00 00 0A 14 1E 01 E0 00 00 16 94 04 00 00 22 00 F9 02 00 00 00 01 04 00
       00 00 E0 00 00 FB
@@ -4093,6 +4345,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 8B 00 00
       80 11 E4 EC 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 35 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4108,6 +4363,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 6E 04 8C 00 00
       FF 11 AD E2 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 5A 09 7C 00 00 00 00 00 02
       00 00 00 02 00 00 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 FF 00 01
@@ -4136,6 +4394,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 6E 04 8D 00 00
       FF 11 AD E1 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 5A 09 7C 00 00 00 00 00 02
       00 00 00 02 00 00 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 FF 00 01
@@ -4176,6 +4437,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 90 00 00
       80 11 E4 D5 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 38 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -4192,6 +4456,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 ED 04 91 00 00
       FF 11 AD 5E 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 D9 09 FB 00 00 84 00 00 00
       00 04 00 00 00 01 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 01 80 01
@@ -4213,6 +4480,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 45 04 92 00 00
       FF 11 AE 05 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 31 09 53 00 00 00 00 00 01
       00 00 00 00 00 00 0C 5F 73 6C 65 65 70 2D 70 72 6F 78 79 04 5F 75 64 70 05 6C
@@ -4228,6 +4498,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 60092
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 93 00 00
       01 11 AC 15 0A 14 1E 01 E0 00 00 FC EA BC 14 EB 00 20 09 43 53 FE 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -4242,6 +4515,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 60092
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 94 00 00
       01 11 AC 14 0A 14 1E 01 E0 00 00 FC EA BC 14 EB 00 20 09 43 53 FE 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -4280,6 +4556,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 96 00 00
       80 11 E4 E1 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3A 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4295,6 +4574,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 97 00 00
       80 11 E4 CE 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 38 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -4323,6 +4605,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 ED 04 99 00 00
       FF 11 AD 56 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 D9 09 FB 00 00 84 00 00 00
       00 04 00 00 00 01 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 01 80 01
@@ -4344,6 +4629,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 97 04 9A 00 00
       01 11 9C AD 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 83 18 A4 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4362,6 +4650,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 99 04 9B 00 00
       01 11 9C AA 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 85 18 A6 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4380,6 +4671,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 9C 00 00
       80 11 E4 DB 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3A 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4395,6 +4689,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 9D 00 00
       01 11 9C A0 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4413,6 +4710,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 9E 00 00
       80 11 E4 C7 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 38 29 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -4453,6 +4753,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 9F 00 00
       80 11 E4 D8 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3A 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4468,6 +4771,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 A0 00 00
       01 11 9C 9D 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4486,6 +4792,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 60 04 A1 00 00
       80 11 E4 C4 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 4C 51 85 93 38 28 10 00 01
       00 00 00 00 00 01 20 46 48 45 50 46 43 45 4C 45 48 46 43 45 50 46 46 46 41 43
@@ -4502,6 +4811,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 53770
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 A2 00 00
       01 11 AC 06 0A 14 1E 01 E0 00 00 FC D2 0A 14 EB 00 20 09 43 48 26 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -4543,6 +4855,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.252
   - protocol: UDP
+  - src_port: 53770
+  - dst_port: 5355
+  - app_protocol: Unknown
   - hexa_frame: 01 00 5E 00 00 FC 00 10 18 33 CF 44 08 00 45 00 00 34 04 A3 00 00
       01 11 AC 05 0A 14 1E 01 E0 00 00 FC D2 0A 14 EB 00 20 09 43 48 26 00 00 00 01
       00 00 00 00 00 00 06 69 73 61 74 61 70 00 00 01 00 01
@@ -4557,6 +4872,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 138
+  - dst_port: 138
+  - app_protocol: NETBIOS-DGM
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 CF 04 A5 00 00
       80 11 E4 51 0A 14 1E 01 0A 14 1E FF 00 8A 00 8A 00 BB 51 F4 11 0E 93 3D 0A 14
       1E 01 00 8A 00 A5 00 00 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43
@@ -4577,6 +4895,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 A6 00 00
       80 11 E4 D1 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3F 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4592,6 +4913,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 ED 04 A7 00 00
       FF 11 AD 48 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 D9 09 FB 00 00 84 00 00 00
       00 04 00 00 00 01 08 63 69 73 63 6F 30 32 70 05 6C 6F 63 61 6C 00 00 01 80 01
@@ -4613,6 +4937,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 224.0.0.251
   - protocol: UDP
+  - src_port: 5353
+  - dst_port: 5353
+  - app_protocol: MDNS
   - hexa_frame: 01 00 5E 00 00 FB 00 10 18 33 CF 44 08 00 45 00 00 45 04 A8 00 00
       FF 11 AD EF 0A 14 1E 01 E0 00 00 FB 14 E9 14 E9 00 31 09 53 00 00 00 00 00 01
       00 00 00 00 00 00 0C 5F 73 6C 65 65 70 2D 70 72 6F 78 79 04 5F 75 64 70 05 6C
@@ -4667,6 +4994,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 A9 00 00
       80 11 E4 CE 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3F 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4682,6 +5012,9 @@ packets:
   - source_ip: 0.0.0.0
   - destination_ip: 255.255.255.255
   - protocol: UDP
+  - src_port: 68
+  - dst_port: 67
+  - app_protocol: DHCP
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 01 4E 04 AA 00 00
       80 11 34 F6 00 00 00 00 FF FF FF FF 00 44 00 43 01 3A 01 4B 01 01 06 00 F0 BC
       1E F2 0A 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10 18 33
@@ -4707,6 +5040,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 138
+  - dst_port: 138
+  - app_protocol: NETBIOS-DGM
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 CF 04 AB 00 00
       80 11 E4 4B 0A 14 1E 01 0A 14 1E FF 00 8A 00 8A 00 BB 51 F4 11 0E 93 42 0A 14
       1E 01 00 8A 00 A5 00 00 20 45 44 45 4A 46 44 45 44 45 50 44 41 44 43 46 41 43
@@ -4727,6 +5063,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 10.20.30.255
   - protocol: UDP
+  - src_port: 137
+  - dst_port: 137
+  - app_protocol: NETBIOS-NS
   - hexa_frame: FF FF FF FF FF FF 00 10 18 33 CF 44 08 00 45 00 00 4E 04 AC 00 00
       80 11 E4 CB 0A 14 1E 01 0A 14 1E FF 00 89 00 89 00 3A 51 73 93 3F 01 10 00 01
       00 00 00 00 00 00 20 45 4A 46 44 45 42 46 45 45 42 46 41 43 41 43 41 43 41 43
@@ -4769,6 +5108,9 @@ packets:
   - source_ip: 10.20.30.1
   - destination_ip: 239.255.255.250
   - protocol: UDP
+  - src_port: 61752
+  - dst_port: 1900
+  - app_protocol: SSDP
   - hexa_frame: 01 00 5E 7F FF FA 00 10 18 33 CF 44 08 00 45 00 00 A1 04 AD 00 00
       01 11 9C 90 0A 14 1E 01 EF FF FF FA F1 38 07 6C 00 8D 18 AE 4D 2D 53 45 41 52
       43 48 20 2A 20 48 54 54 50 2F 31 2E 31 0D 0A 48 6F 73 74 3A 32 33 39 2E 32 35
@@ -4778,11 +5120,11 @@ packets:
       73 64 70 3A 64 69 73 63 6F 76 65 72 22 0D 0A 4D 58 3A 33 0D 0A 0D 0A
 ipv4_senders:
 - ip: 10.20.30.1
-  packet_count: 154
-- ip: 0.0.0.0
-  packet_count: 6
+  packet_count: 91
 - ip: 10.20.30.254
   packet_count: 20
+- ip: 0.0.0.0
+  packet_count: 3
 top_ipv4_senders:
 - ip: 10.20.30.1
-  packet_count: 154
+  packet_count: 91
