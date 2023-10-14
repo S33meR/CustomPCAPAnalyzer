@@ -1,9 +1,9 @@
 import ruamel.yaml.scalarstring
 from scapy.all import rdpcap
 import ruamel.yaml as yaml
-from collections import OrderedDict
+from collections import *
 import os
-from collections import defaultdict
+import argparse
 
 def calculateDestinationMAC(packet):
     packetBytes = bytes(packet)
@@ -117,6 +117,7 @@ def main ():
     filterpacket = rdpcap(pcapFile)
     packetCount = len(packets)
     packetCounter = 1
+    filterCounter = 1
     file = os.path.basename (pcapFile)
     senders = defaultdict(int)
     info = {
@@ -127,6 +128,55 @@ def main ():
         'packets': []
 
     }
+
+    # ---------filter section------------
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--protocol", help="Filter by protocol")
+    args = parser.parse_args()
+
+    protocolFilter = args.protocol
+
+    if protocolFilter:
+        # skontrolujeme ci je zadany protokol platny
+        if protocolFilter in ipv4Map.values():
+            filtratedPackets = [packet for packet in packets if calculateIPv4protocol(packet) == protocolFilter]
+            filtratedCount = len(filtratedPackets)
+
+            if filtratedCount > 0:
+                filtratedOutput = {
+                    'filtrated_packets': []
+                }
+                for packet in filtratedPackets:
+                    frame = OrderedDict()  # na udrzanie poradia
+                    frame['frame_number'] = filterCounter
+                    frame['len_frame_pcap'] = calculateFrameLength(packet)
+                    frame['len_frame_medium'] = calculateFrameLengthMedium(packet)
+                    frame['frame_type'] = calculateFrameType(packet)
+                    frame['src_mac'] = calculateSourceMAC(packet)
+                    frame['dst_mac'] = calculateDestinationMAC(packet)
+                    if (calculateFrameType(packet) == 'Ethernet 2'):
+                        frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
+                        frame['source_ip'] = calculateIPv4source(packet)
+                        frame['destination_ip'] = calculateIPv4destination(packet)
+                        if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
+                            frame['protocol'] = calculateIPv4protocol(packet)
+                            senders[frame['source_ip']] += 1  # pridanie do slovnika, vyuzitie defaultdict
+
+                    if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(
+                            packet) == 'IEEE 802.3 LLC'):
+                        frame['dsap'] = calculateServiceAccessPoint(packet, False)
+                        frame['ssap'] = calculateServiceAccessPoint(packet, True)
+                    if calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP':
+                        frame['pid'] = calculateProtocolID(packet)
+                    filterCounter += 1
+                    filtratedOutput['filtrated_packets'].append(frame)
+
+                with open('filter.yaml', 'w') as yaml_file:
+                    yaml.dump(filtratedOutput, yaml_file, default_flow_style=False, Dumper=yaml.Dumper)
+            else:
+                print('No packets with specified protocol')
+        else:
+            print('Invalid protocol')
 
 
 
@@ -171,7 +221,9 @@ def main ():
         frame['hexa_frame'] = hexRows
         printer['packets'].append(frame)
         packetCounter += 1
-    # ---------filter section------------
+
+
+
 
 
     # ---------senders section------------
