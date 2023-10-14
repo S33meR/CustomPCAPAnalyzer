@@ -1,0 +1,22 @@
+0x0200: Xerox PUP
+0x0201: PUP ARP
+0x0800: IPv4
+0x0801: X.75 Internet
+0x0805: X.25 Level 3
+0x0806: ARP
+0x8035: RARP
+0x809B: AppleTalk
+0x80F3: AppleTalk AARP
+0x8100: IEEE 802.1Q VLAN tagging
+0x8137: Novell IPX
+0x880B: PPP
+0x8847: MPLS unicast
+0x8848: MPLS with upstream-assigned label
+0x8863: PPPoE Discovery Stage
+0x8864: PPPoE Session Stage
+0x2000: CDP
+0x2004: DTP
+0x010B: PVST+
+0x88CC: LLDP
+0x9000: ECTP
+0x86DD: IPv6
