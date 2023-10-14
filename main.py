@@ -162,8 +162,71 @@ def main ():
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--protocol", help="Filter by protocol")
     args = parser.parse_args()
+    filterNumbers = []
+
 
     protocolFilter = args.protocol
+
+
+    # ---------frame section------------
+    for packet in packets:
+        packetBytes = bytes(packet)
+
+        frame = OrderedDict()  # na udrzanie poradia
+        frame['frame_number'] = packetCounter
+        if protocolFilter:
+            if calculateIPv4protocol(packet) == protocolFilter:
+                filterNumbers.append(packetCounter)
+        frame['len_frame_pcap'] = calculateFrameLength(packet)
+        frame['len_frame_medium'] = calculateFrameLengthMedium(packet)
+        frame['frame_type'] = calculateFrameType(packet)
+        frame['src_mac'] = calculateSourceMAC(packet)
+        frame['dst_mac'] = calculateDestinationMAC(packet)
+
+        if (calculateFrameType(packet) == 'Ethernet 2'):
+            frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
+            frame['source_ip'] = calculateIPv4source(packet)
+            frame['destination_ip'] = calculateIPv4destination(packet)
+            if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
+                frame['protocol'] = calculateIPv4protocol(packet)
+                senders[frame['source_ip']] += 1  # pridanie do slovnika, vyuzitie defaultdict
+                if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
+                    frame['src_port'] = calculateIPsourceport(packet)
+                    frame['dst_port'] = calculateIPdestinationport(packet)
+                    if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
+                        appProtocol = getMin(calculateIPsourceport(packet), calculateIPdestinationport(packet))
+                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
+                        appProtocol = calculateIPsourceport(packet)
+                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
+                        appProtocol = calculateIPdestinationport(packet)
+                    else:
+                        appProtocol = 0
+
+
+                    frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
+
+        if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(packet) == 'IEEE 802.3 LLC'):
+            frame['dsap'] = calculateServiceAccessPoint(packet, False)
+            frame['ssap'] = calculateServiceAccessPoint(packet, True)
+        if calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP':
+            frame['pid'] = calculateProtocolID(packet)
+
+        # ---------hexa section------------
+
+
+        hexaGulas = ' '.join([f'{byte:02X}' for byte in packetBytes])  # https://stackoverflow.com/questions/49597486/convert-bytes-to-hexadecimal-in-python
+        hexRows = ''.join([hexaGulas[i:i+48] for i in range(0, len(hexaGulas), 48)])
+
+        frame['hexa_frame'] = ruamel.yaml.scalarstring.PreservedScalarString(hexRows)
+
+        '''hex_str = ''.join([f'{byte:02X}' for byte in packetBytes])
+        hex_array = hex_split(hex_str)
+        formatted_hex_dump = hex_dump_str(hex_array)'''
+
+        frame['hexa_frame'] = hexRows
+        printer['packets'].append(frame)
+        # print out the packets
+        packetCounter += 1
 
     if protocolFilter:
         # skontrolujeme ci je zadany protokol platny
@@ -178,7 +241,7 @@ def main ():
                 for packet in filtratedPackets:
                     packetBytes = bytes(packet)
                     frame = OrderedDict()  # na udrzanie poradia
-                    frame['frame_number'] = filterCounter
+                    frame['frame_number'] = filterNumbers[filterCounter - 1]
                     frame['len_frame_pcap'] = calculateFrameLength(packet)
                     frame['len_frame_medium'] = calculateFrameLengthMedium(packet)
                     frame['frame_type'] = calculateFrameType(packet)
@@ -230,63 +293,6 @@ def main ():
                 print('No packets with specified protocol')
         else:
             print('Invalid protocol')
-
-
-    # ---------frame section------------
-    for packet in packets:
-        packetBytes = bytes(packet)
-
-        frame = OrderedDict()  # na udrzanie poradia
-        frame['frame_number'] = packetCounter
-        frame['len_frame_pcap'] = calculateFrameLength(packet)
-        frame['len_frame_medium'] = calculateFrameLengthMedium(packet)
-        frame['frame_type'] = calculateFrameType(packet)
-        frame['src_mac'] = calculateSourceMAC(packet)
-        frame['dst_mac'] = calculateDestinationMAC(packet)
-        if (calculateFrameType(packet) == 'Ethernet 2'):
-            frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
-            frame['source_ip'] = calculateIPv4source(packet)
-            frame['destination_ip'] = calculateIPv4destination(packet)
-            if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
-                frame['protocol'] = calculateIPv4protocol(packet)
-                senders[frame['source_ip']] += 1  # pridanie do slovnika, vyuzitie defaultdict
-                if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
-                    frame['src_port'] = calculateIPsourceport(packet)
-                    frame['dst_port'] = calculateIPdestinationport(packet)
-                    if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
-                        appProtocol = getMin(calculateIPsourceport(packet), calculateIPdestinationport(packet))
-                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
-                        appProtocol = calculateIPsourceport(packet)
-                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
-                        appProtocol = calculateIPdestinationport(packet)
-                    else:
-                        appProtocol = 0
-
-
-                    frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
-
-        if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(packet) == 'IEEE 802.3 LLC'):
-            frame['dsap'] = calculateServiceAccessPoint(packet, False)
-            frame['ssap'] = calculateServiceAccessPoint(packet, True)
-        if calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP':
-            frame['pid'] = calculateProtocolID(packet)
-
-        # ---------hexa section------------
-
-
-        hexaGulas = ' '.join([f'{byte:02X}' for byte in packetBytes])  # https://stackoverflow.com/questions/49597486/convert-bytes-to-hexadecimal-in-python
-        hexRows = ''.join([hexaGulas[i:i+48] for i in range(0, len(hexaGulas), 48)])
-
-        frame['hexa_frame'] = ruamel.yaml.scalarstring.PreservedScalarString(hexRows)
-
-        '''hex_str = ''.join([f'{byte:02X}' for byte in packetBytes])
-        hex_array = hex_split(hex_str)
-        formatted_hex_dump = hex_dump_str(hex_array)'''
-
-        frame['hexa_frame'] = hexRows
-        printer['packets'].append(frame)
-        # print out the packets
-        packetCounter += 1
 
 
 
