@@ -5,6 +5,21 @@ from collections import *
 import os
 import argparse
 
+class IPv4Stream:
+    ip_dst = []
+    ip_src = []
+    port_dst = []
+    port_src = []
+    frames = []
+    def __init__(self, p_ip_dst, p_ip_src, p_port_dst, p_port_src, p_frameNumber):
+        self.ip_dst = p_ip_dst
+        self.ip_src = p_ip_src
+        self.port_dst = p_port_dst
+        self.port_src = p_port_src
+        self.frames = []
+        self.frames.append(p_frameNumber + 1)
+
+
 def getMin(x,y):
     if x < y:
         return x
@@ -137,11 +152,51 @@ def calculateIPdestinationport(packet):
     frameBytes = packetBytes[ipHeader + 16:ipHeader + 18]
     destinationport = int.from_bytes(frameBytes, byteorder='big')
     return destinationport
+def calculateAppProtocol(packet):
 
+    if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
+        appProtocol = getMin(calculateIPsourceport(packet), calculateIPdestinationport(packet))
+    elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(
+            calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
+        appProtocol = calculateIPsourceport(packet)
+    elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(
+            calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
+        appProtocol = calculateIPdestinationport(packet)
+    else:
+        appProtocol = 0
+
+    return appProtocol
+
+def get_transport_protocol(p_frame):
+    head_len = (getDataFromFrame(p_frame, 14, 14, True) - int(
+        getDataFromFrame(p_frame, 14, 14, True) / 16) * 16) * 4
+    return p_frame[14 + head_len:len(p_frame)]
+
+def getDataFromFrame(packet, pStart, pEnd, pInteger = False):
+    if pInteger:
+        return int.from_bytes(packet[pStart:(pEnd + 1)], byteorder='big')
+    else:
+        return packet[pStart:(pEnd + 1)]
+
+def IPinStream(p_streams, p_ipDestination, p_ipSource, p_portSource = 0, p_portDestination = 0):
+
+    for i in range (0, len(p_streams)):
+        if ((p_streams[i].ip_src == p_ipDestination) and (p_streams[i].ip_dst == p_ipSource) and (p_streams[i].port_dst == p_portSource) and (p_streams[i].port_src == p_portDestination))  or ((p_streams[i].ip_src == p_ipSource) and
+        (p_streams[i].ip_dst == p_ipDestination) and (p_streams[i].port_dst == p_portDestination) and (p_streams[i].port_src == p_portSource)):
+            return i
+    return -1
+
+def insertToStream(p_arrayStreams, p_frameNumber, p_ipSource, p_ipDestination, p_portSource = 0, p_portDestination = 0):
+
+    curStr = IPinStream(p_arrayStreams, p_ipSource, p_ipDestination, p_portSource, p_portDestination)
+    if curStr >= 0:
+        p_arrayStreams[curStr].frames.append(p_frameNumber + 1)
+    elif curStr == -1:
+        p_arrayStreams.append(IPv4Stream(p_ipSource, p_ipDestination, p_portSource, p_portDestination, p_frameNumber))
 
 def main ():
 
-    pcapFile = '/Users/michalhlinka/PycharmProjects/pythonProject1/vzorky_pcap_na_analyzu/trace-26.pcap' #treba cestu
+    pcapFile = '/Users/michalhlinka/PycharmProjects/pythonProject1/vzorky_pcap_na_analyzu/trace-27.pcap' #treba cestu
     packets = rdpcap(pcapFile)
     filterpacket = rdpcap(pcapFile)
     packetCount = len(packets)
@@ -164,8 +219,80 @@ def main ():
     args = parser.parse_args()
     filterNumbers = []
 
-
     protocolFilter = args.protocol
+
+    # --------TCP section------------
+    tcpStreams = []
+    for frameNumber in range(0, len(packets)):
+        frame = bytes(packets[frameNumber])
+        if (getDataFromFrame(frame,12, 13, True) == 2048):
+
+            if (calculateIPv4protocol(frame) == 'TCP'):
+                tcp = get_transport_protocol(frame)
+                if (getDataFromFrame(tcp, 0, 1, True) in appMap):
+                    #print(1)
+                    if appMap.get(getDataFromFrame(tcp, 0, 1, True), 'Unknown') != protocolFilter:
+                        continue
+                else:
+                    if (getDataFromFrame(tcp, 2, 3, True) in appMap):
+                        if appMap.get(getDataFromFrame(tcp, 2, 3, True), 'Unknown') != protocolFilter:
+                            continue
+                    else:
+                        continue
+                insertToStream(tcpStreams, frameNumber, getDataFromFrame(frame, 26, 29), getDataFromFrame(frame, 30, 33), getDataFromFrame(tcp, 0, 1), getDataFromFrame(tcp, 2, 3))
+
+    buffer = 0
+    halfbuffer = 0
+    # zisti ci je komunikacia kompletna
+    for i in tcpStreams:
+        start = 0
+        end = 0
+        if (getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[0] - 1])), 13, 13, True) == 0x2) and (getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[1] - 1])), 13, 13, True) == 0x12) and getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[2] - 1])), 13, 13, True) == 0x10:
+            start = 1
+        end0 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 1] - 1])), 13, 13, True)
+        end1 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 2] - 1])), 13, 13, True)
+
+        if len(i.frames) - 3 < 0 :
+            end2 = -1
+        else:
+            end2 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 3] - 1])), 13, 13, True)
+        if len(i.frames) - 4 < 0 :
+            end3 = -1
+        else:
+            end3 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 4] - 1])), 13, 13, True)
+
+        #rst
+        if (end0 == 0x14)  or (end0 == 0x1):
+            end = 1
+        else:
+            # 3 way handshake
+            if (end0 == 0x10) and ((end1 == 0x11) or (end == 0x19)) \
+                and ((end2 == 0x11) or (end2 == 0x19)):
+                end = 1
+            else:
+                if (end0 == 0x10) and ((end1 == 0x11) or (end1 == 0x19)) \
+                    and (end2 == 0x10) and ((end3 == 0x11) or (end3 == 0x19)):
+                    end = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     # ---------frame section------------
@@ -175,14 +302,13 @@ def main ():
         frame = OrderedDict()  # na udrzanie poradia
         frame['frame_number'] = packetCounter
         if protocolFilter:
-            if calculateIPv4protocol(packet) == protocolFilter:
+            if appMap.get(calculateAppProtocol(packet)) == protocolFilter:
                 filterNumbers.append(packetCounter)
         frame['len_frame_pcap'] = calculateFrameLength(packet)
         frame['len_frame_medium'] = calculateFrameLengthMedium(packet)
         frame['frame_type'] = calculateFrameType(packet)
         frame['src_mac'] = calculateSourceMAC(packet)
         frame['dst_mac'] = calculateDestinationMAC(packet)
-
         if (calculateFrameType(packet) == 'Ethernet 2'):
             frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
             frame['source_ip'] = calculateIPv4source(packet)
@@ -193,16 +319,7 @@ def main ():
                 if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
                     frame['src_port'] = calculateIPsourceport(packet)
                     frame['dst_port'] = calculateIPdestinationport(packet)
-                    if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
-                        appProtocol = getMin(calculateIPsourceport(packet), calculateIPdestinationport(packet))
-                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
-                        appProtocol = calculateIPsourceport(packet)
-                    elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
-                        appProtocol = calculateIPdestinationport(packet)
-                    else:
-                        appProtocol = 0
-
-
+                    appProtocol = calculateAppProtocol(packet)
                     frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
 
         if (calculateFrameType(packet) == 'IEEE 802.3 LLC & SNAP' or calculateFrameType(packet) == 'IEEE 802.3 LLC'):
@@ -230,8 +347,8 @@ def main ():
 
     if protocolFilter:
         # skontrolujeme ci je zadany protokol platny
-        if protocolFilter in ipv4Map.values():
-            filtratedPackets = [packet for packet in packets if calculateIPv4protocol(packet) == protocolFilter]
+        if protocolFilter in appMap.values():
+            filtratedPackets = [packet for packet in packets if appMap.get(calculateAppProtocol(packet)) == protocolFilter]
             filtratedCount = len(filtratedPackets)
 
             if filtratedCount > 0:
@@ -256,19 +373,7 @@ def main ():
                             if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
                                 frame['src_port'] = calculateIPsourceport(packet)
                                 frame['dst_port'] = calculateIPdestinationport(packet)
-                                if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(
-                                        calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
-                                    appProtocol = getMin(calculateIPsourceport(packet),
-                                                         calculateIPdestinationport(packet))
-                                elif appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(
-                                        calculateIPdestinationport(packet), 'Unknown') == 'Unknown':
-                                    appProtocol = calculateIPsourceport(packet)
-                                elif appMap.get(calculateIPsourceport(packet), 'Unknown') == 'Unknown' and appMap.get(
-                                        calculateIPdestinationport(packet), 'Unknown') != 'Unknown':
-                                    appProtocol = calculateIPdestinationport(packet)
-                                else:
-                                    appProtocol = 0
-
+                                appProtocol = calculateAppProtocol(packet)
                                 frame['app_protocol'] = appMap.get(appProtocol, 'Unknown')
 
 
