@@ -3,7 +3,7 @@ filtrated_packets:
   - frame_number: 115
   - len_frame_pcap: 55
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20,7 +20,7 @@ filtrated_packets:
   - frame_number: 116
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -37,7 +37,7 @@ filtrated_packets:
   - frame_number: 123
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -55,7 +55,7 @@ filtrated_packets:
   - frame_number: 124
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -72,7 +72,7 @@ filtrated_packets:
   - frame_number: 125
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -90,7 +90,7 @@ filtrated_packets:
   - frame_number: 127
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -107,7 +107,7 @@ filtrated_packets:
   - frame_number: 186
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -124,7 +124,7 @@ filtrated_packets:
   - frame_number: 188
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -141,7 +141,7 @@ filtrated_packets:
   - frame_number: 189
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -158,7 +158,7 @@ filtrated_packets:
   - frame_number: 190
   - len_frame_pcap: 685
   - len_frame_medium: 689
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -199,7 +199,7 @@ filtrated_packets:
   - frame_number: 192
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -216,7 +216,7 @@ filtrated_packets:
   - frame_number: 193
   - len_frame_pcap: 266
   - len_frame_medium: 270
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -241,7 +241,7 @@ filtrated_packets:
   - frame_number: 194
   - len_frame_pcap: 118
   - len_frame_medium: 122
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -260,7 +260,7 @@ filtrated_packets:
   - frame_number: 196
   - len_frame_pcap: 224
   - len_frame_medium: 228
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -283,7 +283,7 @@ filtrated_packets:
   - frame_number: 197
   - len_frame_pcap: 1724
   - len_frame_medium: 1728
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -364,7 +364,7 @@ filtrated_packets:
   - frame_number: 198
   - len_frame_pcap: 154
   - len_frame_medium: 158
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -385,7 +385,7 @@ filtrated_packets:
   - frame_number: 199
   - len_frame_pcap: 556
   - len_frame_medium: 560
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -421,7 +421,7 @@ filtrated_packets:
   - frame_number: 200
   - len_frame_pcap: 116
   - len_frame_medium: 120
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -440,7 +440,7 @@ filtrated_packets:
   - frame_number: 201
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -457,7 +457,7 @@ filtrated_packets:
   - frame_number: 202
   - len_frame_pcap: 85
   - len_frame_medium: 89
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -475,7 +475,7 @@ filtrated_packets:
   - frame_number: 203
   - len_frame_pcap: 85
   - len_frame_medium: 89
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -493,7 +493,7 @@ filtrated_packets:
   - frame_number: 204
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -510,7 +510,7 @@ filtrated_packets:
   - frame_number: 206
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -527,7 +527,7 @@ filtrated_packets:
   - frame_number: 215
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -544,7 +544,7 @@ filtrated_packets:
   - frame_number: 216
   - len_frame_pcap: 477
   - len_frame_medium: 481
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -577,7 +577,7 @@ filtrated_packets:
   - frame_number: 217
   - len_frame_pcap: 547
   - len_frame_medium: 551
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -613,7 +613,7 @@ filtrated_packets:
   - frame_number: 218
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -630,7 +630,7 @@ filtrated_packets:
   - frame_number: 219
   - len_frame_pcap: 116
   - len_frame_medium: 120
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -649,7 +649,7 @@ filtrated_packets:
   - frame_number: 220
   - len_frame_pcap: 107
   - len_frame_medium: 111
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -668,7 +668,7 @@ filtrated_packets:
   - frame_number: 221
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -685,7 +685,7 @@ filtrated_packets:
   - frame_number: 222
   - len_frame_pcap: 93
   - len_frame_medium: 97
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -703,7 +703,7 @@ filtrated_packets:
   - frame_number: 223
   - len_frame_pcap: 93
   - len_frame_medium: 97
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -721,7 +721,7 @@ filtrated_packets:
   - frame_number: 225
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -738,7 +738,7 @@ filtrated_packets:
   - frame_number: 233
   - len_frame_pcap: 107
   - len_frame_medium: 111
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -757,7 +757,7 @@ filtrated_packets:
   - frame_number: 234
   - len_frame_pcap: 224
   - len_frame_medium: 228
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -780,7 +780,7 @@ filtrated_packets:
   - frame_number: 235
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -797,7 +797,7 @@ filtrated_packets:
   - frame_number: 267
   - len_frame_pcap: 113
   - len_frame_medium: 117
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -816,7 +816,7 @@ filtrated_packets:
   - frame_number: 268
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -833,7 +833,7 @@ filtrated_packets:
   - frame_number: 281
   - len_frame_pcap: 661
   - len_frame_medium: 665
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -873,7 +873,7 @@ filtrated_packets:
   - frame_number: 282
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -890,7 +890,7 @@ filtrated_packets:
   - frame_number: 287
   - len_frame_pcap: 1258
   - len_frame_medium: 1262
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -953,7 +953,7 @@ filtrated_packets:
   - frame_number: 288
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -970,7 +970,7 @@ filtrated_packets:
   - frame_number: 289
   - len_frame_pcap: 1352
   - len_frame_medium: 1356
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1037,7 +1037,7 @@ filtrated_packets:
   - frame_number: 290
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1054,7 +1054,7 @@ filtrated_packets:
   - frame_number: 291
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1124,7 +1124,7 @@ filtrated_packets:
   - frame_number: 292
   - len_frame_pcap: 239
   - len_frame_medium: 243
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1148,7 +1148,7 @@ filtrated_packets:
   - frame_number: 293
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1166,7 +1166,7 @@ filtrated_packets:
   - frame_number: 294
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1183,7 +1183,7 @@ filtrated_packets:
   - frame_number: 296
   - len_frame_pcap: 545
   - len_frame_medium: 549
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1219,7 +1219,7 @@ filtrated_packets:
   - frame_number: 297
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1289,7 +1289,7 @@ filtrated_packets:
   - frame_number: 298
   - len_frame_pcap: 591
   - len_frame_medium: 595
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1326,7 +1326,7 @@ filtrated_packets:
   - frame_number: 299
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1344,7 +1344,7 @@ filtrated_packets:
   - frame_number: 300
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1361,7 +1361,7 @@ filtrated_packets:
   - frame_number: 301
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1378,7 +1378,7 @@ filtrated_packets:
   - frame_number: 302
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1448,7 +1448,7 @@ filtrated_packets:
   - frame_number: 303
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1465,7 +1465,7 @@ filtrated_packets:
   - frame_number: 304
   - len_frame_pcap: 415
   - len_frame_medium: 419
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1496,7 +1496,7 @@ filtrated_packets:
   - frame_number: 305
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1514,7 +1514,7 @@ filtrated_packets:
   - frame_number: 306
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1531,7 +1531,7 @@ filtrated_packets:
   - frame_number: 307
   - len_frame_pcap: 1377
   - len_frame_medium: 1381
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1599,7 +1599,7 @@ filtrated_packets:
   - frame_number: 308
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1616,7 +1616,7 @@ filtrated_packets:
   - frame_number: 310
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1686,7 +1686,7 @@ filtrated_packets:
   - frame_number: 311
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -1703,7 +1703,7 @@ filtrated_packets:
   - frame_number: 312
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1773,7 +1773,7 @@ filtrated_packets:
   - frame_number: 313
   - len_frame_pcap: 445
   - len_frame_medium: 449
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1805,7 +1805,7 @@ filtrated_packets:
   - frame_number: 314
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1875,7 +1875,7 @@ filtrated_packets:
   - frame_number: 315
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -1945,7 +1945,7 @@ filtrated_packets:
   - frame_number: 316
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2015,7 +2015,7 @@ filtrated_packets:
   - frame_number: 317
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2085,7 +2085,7 @@ filtrated_packets:
   - frame_number: 318
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2155,7 +2155,7 @@ filtrated_packets:
   - frame_number: 319
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -2172,7 +2172,7 @@ filtrated_packets:
   - frame_number: 320
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2240,7 +2240,7 @@ filtrated_packets:
   - frame_number: 321
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2310,7 +2310,7 @@ filtrated_packets:
   - frame_number: 322
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2380,7 +2380,7 @@ filtrated_packets:
   - frame_number: 323
   - len_frame_pcap: 357
   - len_frame_medium: 361
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2408,7 +2408,7 @@ filtrated_packets:
   - frame_number: 324
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -2425,7 +2425,7 @@ filtrated_packets:
   - frame_number: 326
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2495,7 +2495,7 @@ filtrated_packets:
   - frame_number: 327
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2565,7 +2565,7 @@ filtrated_packets:
   - frame_number: 328
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -2582,7 +2582,7 @@ filtrated_packets:
   - frame_number: 329
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2652,7 +2652,7 @@ filtrated_packets:
   - frame_number: 330
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2722,7 +2722,7 @@ filtrated_packets:
   - frame_number: 331
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2792,7 +2792,7 @@ filtrated_packets:
   - frame_number: 332
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2860,7 +2860,7 @@ filtrated_packets:
   - frame_number: 333
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -2930,7 +2930,7 @@ filtrated_packets:
   - frame_number: 334
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3000,7 +3000,7 @@ filtrated_packets:
   - frame_number: 335
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3070,7 +3070,7 @@ filtrated_packets:
   - frame_number: 336
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3140,7 +3140,7 @@ filtrated_packets:
   - frame_number: 337
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -3157,7 +3157,7 @@ filtrated_packets:
   - frame_number: 338
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3227,7 +3227,7 @@ filtrated_packets:
   - frame_number: 339
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3295,7 +3295,7 @@ filtrated_packets:
   - frame_number: 340
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3365,7 +3365,7 @@ filtrated_packets:
   - frame_number: 341
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3435,7 +3435,7 @@ filtrated_packets:
   - frame_number: 342
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3505,7 +3505,7 @@ filtrated_packets:
   - frame_number: 343
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3575,7 +3575,7 @@ filtrated_packets:
   - frame_number: 344
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3645,7 +3645,7 @@ filtrated_packets:
   - frame_number: 345
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3713,7 +3713,7 @@ filtrated_packets:
   - frame_number: 346
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3783,7 +3783,7 @@ filtrated_packets:
   - frame_number: 347
   - len_frame_pcap: 416
   - len_frame_medium: 420
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3814,7 +3814,7 @@ filtrated_packets:
   - frame_number: 348
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -3831,7 +3831,7 @@ filtrated_packets:
   - frame_number: 353
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3901,7 +3901,7 @@ filtrated_packets:
   - frame_number: 354
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -3971,7 +3971,7 @@ filtrated_packets:
   - frame_number: 355
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4041,7 +4041,7 @@ filtrated_packets:
   - frame_number: 356
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4111,7 +4111,7 @@ filtrated_packets:
   - frame_number: 357
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -4128,7 +4128,7 @@ filtrated_packets:
   - frame_number: 358
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4198,7 +4198,7 @@ filtrated_packets:
   - frame_number: 359
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4266,7 +4266,7 @@ filtrated_packets:
   - frame_number: 360
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4336,7 +4336,7 @@ filtrated_packets:
   - frame_number: 361
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4406,7 +4406,7 @@ filtrated_packets:
   - frame_number: 362
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4476,7 +4476,7 @@ filtrated_packets:
   - frame_number: 363
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4546,7 +4546,7 @@ filtrated_packets:
   - frame_number: 364
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4616,7 +4616,7 @@ filtrated_packets:
   - frame_number: 365
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4684,7 +4684,7 @@ filtrated_packets:
   - frame_number: 366
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4754,7 +4754,7 @@ filtrated_packets:
   - frame_number: 367
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4824,7 +4824,7 @@ filtrated_packets:
   - frame_number: 368
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4894,7 +4894,7 @@ filtrated_packets:
   - frame_number: 369
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -4964,7 +4964,7 @@ filtrated_packets:
   - frame_number: 370
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -4981,7 +4981,7 @@ filtrated_packets:
   - frame_number: 371
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5051,7 +5051,7 @@ filtrated_packets:
   - frame_number: 372
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5119,7 +5119,7 @@ filtrated_packets:
   - frame_number: 373
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5189,7 +5189,7 @@ filtrated_packets:
   - frame_number: 374
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5259,7 +5259,7 @@ filtrated_packets:
   - frame_number: 375
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5329,7 +5329,7 @@ filtrated_packets:
   - frame_number: 376
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5399,7 +5399,7 @@ filtrated_packets:
   - frame_number: 377
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5469,7 +5469,7 @@ filtrated_packets:
   - frame_number: 378
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5537,7 +5537,7 @@ filtrated_packets:
   - frame_number: 379
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5607,7 +5607,7 @@ filtrated_packets:
   - frame_number: 380
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5677,7 +5677,7 @@ filtrated_packets:
   - frame_number: 381
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5747,7 +5747,7 @@ filtrated_packets:
   - frame_number: 382
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5817,7 +5817,7 @@ filtrated_packets:
   - frame_number: 383
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5887,7 +5887,7 @@ filtrated_packets:
   - frame_number: 384
   - len_frame_pcap: 1304
   - len_frame_medium: 1308
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -5952,7 +5952,7 @@ filtrated_packets:
   - frame_number: 385
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -5969,7 +5969,7 @@ filtrated_packets:
   - frame_number: 386
   - len_frame_pcap: 1381
   - len_frame_medium: 1385
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6037,7 +6037,7 @@ filtrated_packets:
   - frame_number: 387
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6054,7 +6054,7 @@ filtrated_packets:
   - frame_number: 388
   - len_frame_pcap: 930
   - len_frame_medium: 934
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6104,7 +6104,7 @@ filtrated_packets:
   - frame_number: 389
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6121,7 +6121,7 @@ filtrated_packets:
   - frame_number: 390
   - len_frame_pcap: 1070
   - len_frame_medium: 1074
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6177,7 +6177,7 @@ filtrated_packets:
   - frame_number: 391
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6194,7 +6194,7 @@ filtrated_packets:
   - frame_number: 392
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6212,7 +6212,7 @@ filtrated_packets:
   - frame_number: 393
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6229,7 +6229,7 @@ filtrated_packets:
   - frame_number: 394
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6299,7 +6299,7 @@ filtrated_packets:
   - frame_number: 395
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6369,7 +6369,7 @@ filtrated_packets:
   - frame_number: 396
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6439,7 +6439,7 @@ filtrated_packets:
   - frame_number: 397
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6509,7 +6509,7 @@ filtrated_packets:
   - frame_number: 398
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6579,7 +6579,7 @@ filtrated_packets:
   - frame_number: 399
   - len_frame_pcap: 1384
   - len_frame_medium: 1388
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6647,7 +6647,7 @@ filtrated_packets:
   - frame_number: 400
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6664,7 +6664,7 @@ filtrated_packets:
   - frame_number: 401
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6734,7 +6734,7 @@ filtrated_packets:
   - frame_number: 402
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6804,7 +6804,7 @@ filtrated_packets:
   - frame_number: 403
   - len_frame_pcap: 811
   - len_frame_medium: 815
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6850,7 +6850,7 @@ filtrated_packets:
   - frame_number: 404
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6868,7 +6868,7 @@ filtrated_packets:
   - frame_number: 405
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6885,7 +6885,7 @@ filtrated_packets:
   - frame_number: 408
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6955,7 +6955,7 @@ filtrated_packets:
   - frame_number: 409
   - len_frame_pcap: 270
   - len_frame_medium: 274
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -6980,7 +6980,7 @@ filtrated_packets:
   - frame_number: 410
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -6997,7 +6997,7 @@ filtrated_packets:
   - frame_number: 411
   - len_frame_pcap: 862
   - len_frame_medium: 866
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7045,7 +7045,7 @@ filtrated_packets:
   - frame_number: 412
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7062,7 +7062,7 @@ filtrated_packets:
   - frame_number: 413
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7080,7 +7080,7 @@ filtrated_packets:
   - frame_number: 414
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7097,7 +7097,7 @@ filtrated_packets:
   - frame_number: 417
   - len_frame_pcap: 1378
   - len_frame_medium: 1382
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7165,7 +7165,7 @@ filtrated_packets:
   - frame_number: 418
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7182,7 +7182,7 @@ filtrated_packets:
   - frame_number: 419
   - len_frame_pcap: 1383
   - len_frame_medium: 1387
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7250,7 +7250,7 @@ filtrated_packets:
   - frame_number: 420
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7267,7 +7267,7 @@ filtrated_packets:
   - frame_number: 421
   - len_frame_pcap: 145
   - len_frame_medium: 149
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7287,7 +7287,7 @@ filtrated_packets:
   - frame_number: 422
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7304,7 +7304,7 @@ filtrated_packets:
   - frame_number: 423
   - len_frame_pcap: 1246
   - len_frame_medium: 1250
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7367,7 +7367,7 @@ filtrated_packets:
   - frame_number: 424
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7384,7 +7384,7 @@ filtrated_packets:
   - frame_number: 425
   - len_frame_pcap: 597
   - len_frame_medium: 601
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7422,7 +7422,7 @@ filtrated_packets:
   - frame_number: 426
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7440,7 +7440,7 @@ filtrated_packets:
   - frame_number: 427
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7457,7 +7457,7 @@ filtrated_packets:
   - frame_number: 429
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7527,7 +7527,7 @@ filtrated_packets:
   - frame_number: 430
   - len_frame_pcap: 270
   - len_frame_medium: 274
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7552,7 +7552,7 @@ filtrated_packets:
   - frame_number: 431
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7570,7 +7570,7 @@ filtrated_packets:
   - frame_number: 432
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7587,7 +7587,7 @@ filtrated_packets:
   - frame_number: 434
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7657,7 +7657,7 @@ filtrated_packets:
   - frame_number: 435
   - len_frame_pcap: 160
   - len_frame_medium: 164
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7678,7 +7678,7 @@ filtrated_packets:
   - frame_number: 436
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -7696,7 +7696,7 @@ filtrated_packets:
   - frame_number: 437
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7713,7 +7713,7 @@ filtrated_packets:
   - frame_number: 447
   - len_frame_pcap: 1571
   - len_frame_medium: 1575
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -7788,7 +7788,7 @@ filtrated_packets:
   - frame_number: 448
   - len_frame_pcap: 16438
   - len_frame_medium: 16442
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -8435,7 +8435,7 @@ filtrated_packets:
   - frame_number: 449
   - len_frame_pcap: 16438
   - len_frame_medium: 16442
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -9082,7 +9082,7 @@ filtrated_packets:
   - frame_number: 450
   - len_frame_pcap: 16438
   - len_frame_medium: 16442
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -9729,7 +9729,7 @@ filtrated_packets:
   - frame_number: 451
   - len_frame_pcap: 16438
   - len_frame_medium: 16442
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -10376,7 +10376,7 @@ filtrated_packets:
   - frame_number: 452
   - len_frame_pcap: 235
   - len_frame_medium: 239
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -10400,7 +10400,7 @@ filtrated_packets:
   - frame_number: 453
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -10417,7 +10417,7 @@ filtrated_packets:
   - frame_number: 454
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -10434,7 +10434,7 @@ filtrated_packets:
   - frame_number: 455
   - len_frame_pcap: 16438
   - len_frame_medium: 16442
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11081,7 +11081,7 @@ filtrated_packets:
   - frame_number: 456
   - len_frame_pcap: 3583
   - len_frame_medium: 3587
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11233,7 +11233,7 @@ filtrated_packets:
   - frame_number: 457
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11250,7 +11250,7 @@ filtrated_packets:
   - frame_number: 458
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11268,7 +11268,7 @@ filtrated_packets:
   - frame_number: 459
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11285,7 +11285,7 @@ filtrated_packets:
   - frame_number: 460
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11302,7 +11302,7 @@ filtrated_packets:
   - frame_number: 461
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11319,7 +11319,7 @@ filtrated_packets:
   - frame_number: 462
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11338,7 +11338,7 @@ filtrated_packets:
   - frame_number: 463
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11355,7 +11355,7 @@ filtrated_packets:
   - frame_number: 464
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11372,7 +11372,7 @@ filtrated_packets:
   - frame_number: 465
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11391,7 +11391,7 @@ filtrated_packets:
   - frame_number: 466
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11410,7 +11410,7 @@ filtrated_packets:
   - frame_number: 467
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11429,7 +11429,7 @@ filtrated_packets:
   - frame_number: 468
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11448,7 +11448,7 @@ filtrated_packets:
   - frame_number: 469
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11465,7 +11465,7 @@ filtrated_packets:
   - frame_number: 470
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11482,7 +11482,7 @@ filtrated_packets:
   - frame_number: 471
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11499,7 +11499,7 @@ filtrated_packets:
   - frame_number: 472
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11516,7 +11516,7 @@ filtrated_packets:
   - frame_number: 473
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11535,7 +11535,7 @@ filtrated_packets:
   - frame_number: 474
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11552,7 +11552,7 @@ filtrated_packets:
   - frame_number: 475
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11571,7 +11571,7 @@ filtrated_packets:
   - frame_number: 476
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11590,7 +11590,7 @@ filtrated_packets:
   - frame_number: 477
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11609,7 +11609,7 @@ filtrated_packets:
   - frame_number: 478
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11628,7 +11628,7 @@ filtrated_packets:
   - frame_number: 479
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11645,7 +11645,7 @@ filtrated_packets:
   - frame_number: 480
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11664,7 +11664,7 @@ filtrated_packets:
   - frame_number: 481
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11681,7 +11681,7 @@ filtrated_packets:
   - frame_number: 482
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11700,7 +11700,7 @@ filtrated_packets:
   - frame_number: 483
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11719,7 +11719,7 @@ filtrated_packets:
   - frame_number: 484
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11738,7 +11738,7 @@ filtrated_packets:
   - frame_number: 485
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11755,7 +11755,7 @@ filtrated_packets:
   - frame_number: 486
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11772,7 +11772,7 @@ filtrated_packets:
   - frame_number: 487
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11789,7 +11789,7 @@ filtrated_packets:
   - frame_number: 488
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11806,7 +11806,7 @@ filtrated_packets:
   - frame_number: 489
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11823,7 +11823,7 @@ filtrated_packets:
   - frame_number: 490
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11841,7 +11841,7 @@ filtrated_packets:
   - frame_number: 491
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11859,7 +11859,7 @@ filtrated_packets:
   - frame_number: 492
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11876,7 +11876,7 @@ filtrated_packets:
   - frame_number: 493
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11894,7 +11894,7 @@ filtrated_packets:
   - frame_number: 494
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11912,7 +11912,7 @@ filtrated_packets:
   - frame_number: 495
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11929,7 +11929,7 @@ filtrated_packets:
   - frame_number: 496
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11947,7 +11947,7 @@ filtrated_packets:
   - frame_number: 497
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -11965,7 +11965,7 @@ filtrated_packets:
   - frame_number: 498
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -11982,7 +11982,7 @@ filtrated_packets:
   - frame_number: 499
   - len_frame_pcap: 96
   - len_frame_medium: 100
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12000,7 +12000,7 @@ filtrated_packets:
   - frame_number: 500
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12017,7 +12017,7 @@ filtrated_packets:
   - frame_number: 501
   - len_frame_pcap: 195
   - len_frame_medium: 199
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12039,7 +12039,7 @@ filtrated_packets:
   - frame_number: 502
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12056,7 +12056,7 @@ filtrated_packets:
   - frame_number: 521
   - len_frame_pcap: 544
   - len_frame_medium: 548
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12092,7 +12092,7 @@ filtrated_packets:
   - frame_number: 522
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12109,7 +12109,7 @@ filtrated_packets:
   - frame_number: 523
   - len_frame_pcap: 903
   - len_frame_medium: 907
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12158,7 +12158,7 @@ filtrated_packets:
   - frame_number: 524
   - len_frame_pcap: 1300
   - len_frame_medium: 1304
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12223,7 +12223,7 @@ filtrated_packets:
   - frame_number: 525
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12241,7 +12241,7 @@ filtrated_packets:
   - frame_number: 526
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12258,7 +12258,7 @@ filtrated_packets:
   - frame_number: 527
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12275,7 +12275,7 @@ filtrated_packets:
   - frame_number: 528
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12292,7 +12292,7 @@ filtrated_packets:
   - frame_number: 529
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12311,7 +12311,7 @@ filtrated_packets:
   - frame_number: 530
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12328,7 +12328,7 @@ filtrated_packets:
   - frame_number: 533
   - len_frame_pcap: 244
   - len_frame_medium: 248
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12352,7 +12352,7 @@ filtrated_packets:
   - frame_number: 534
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12369,7 +12369,7 @@ filtrated_packets:
   - frame_number: 658
   - len_frame_pcap: 195
   - len_frame_medium: 199
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12391,7 +12391,7 @@ filtrated_packets:
   - frame_number: 659
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12408,7 +12408,7 @@ filtrated_packets:
   - frame_number: 683
   - len_frame_pcap: 1617
   - len_frame_medium: 1621
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12485,7 +12485,7 @@ filtrated_packets:
   - frame_number: 684
   - len_frame_pcap: 3387
   - len_frame_medium: 3391
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12630,7 +12630,7 @@ filtrated_packets:
   - frame_number: 685
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12648,7 +12648,7 @@ filtrated_packets:
   - frame_number: 686
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12665,7 +12665,7 @@ filtrated_packets:
   - frame_number: 687
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12682,7 +12682,7 @@ filtrated_packets:
   - frame_number: 688
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12699,7 +12699,7 @@ filtrated_packets:
   - frame_number: 689
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12718,7 +12718,7 @@ filtrated_packets:
   - frame_number: 690
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12737,7 +12737,7 @@ filtrated_packets:
   - frame_number: 691
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12754,7 +12754,7 @@ filtrated_packets:
   - frame_number: 693
   - len_frame_pcap: 172
   - len_frame_medium: 176
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12775,7 +12775,7 @@ filtrated_packets:
   - frame_number: 694
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12792,7 +12792,7 @@ filtrated_packets:
   - frame_number: 957
   - len_frame_pcap: 311
   - len_frame_medium: 315
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12819,7 +12819,7 @@ filtrated_packets:
   - frame_number: 958
   - len_frame_pcap: 520
   - len_frame_medium: 524
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12854,7 +12854,7 @@ filtrated_packets:
   - frame_number: 959
   - len_frame_pcap: 1903
   - len_frame_medium: 1907
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -12942,7 +12942,7 @@ filtrated_packets:
   - frame_number: 964
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12959,7 +12959,7 @@ filtrated_packets:
   - frame_number: 965
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -12976,7 +12976,7 @@ filtrated_packets:
   - frame_number: 992
   - len_frame_pcap: 900
   - len_frame_medium: 904
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13025,7 +13025,7 @@ filtrated_packets:
   - frame_number: 993
   - len_frame_pcap: 776
   - len_frame_medium: 780
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13069,7 +13069,7 @@ filtrated_packets:
   - frame_number: 994
   - len_frame_pcap: 92
   - len_frame_medium: 96
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13087,7 +13087,7 @@ filtrated_packets:
   - frame_number: 995
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13104,7 +13104,7 @@ filtrated_packets:
   - frame_number: 996
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13121,7 +13121,7 @@ filtrated_packets:
   - frame_number: 997
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13138,7 +13138,7 @@ filtrated_packets:
   - frame_number: 998
   - len_frame_pcap: 109
   - len_frame_medium: 113
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13157,7 +13157,7 @@ filtrated_packets:
   - frame_number: 999
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13174,7 +13174,7 @@ filtrated_packets:
   - frame_number: 1000
   - len_frame_pcap: 196
   - len_frame_medium: 200
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13196,7 +13196,7 @@ filtrated_packets:
   - frame_number: 1001
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13213,7 +13213,7 @@ filtrated_packets:
   - frame_number: 1040
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13231,7 +13231,7 @@ filtrated_packets:
   - frame_number: 1041
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13249,7 +13249,7 @@ filtrated_packets:
   - frame_number: 1042
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13266,7 +13266,7 @@ filtrated_packets:
   - frame_number: 1093
   - len_frame_pcap: 311
   - len_frame_medium: 315
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13293,7 +13293,7 @@ filtrated_packets:
   - frame_number: 1094
   - len_frame_pcap: 519
   - len_frame_medium: 523
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13328,7 +13328,7 @@ filtrated_packets:
   - frame_number: 1095
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13345,7 +13345,7 @@ filtrated_packets:
   - frame_number: 1096
   - len_frame_pcap: 638
   - len_frame_medium: 642
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13384,7 +13384,7 @@ filtrated_packets:
   - frame_number: 1097
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13401,7 +13401,7 @@ filtrated_packets:
   - frame_number: 1222
   - len_frame_pcap: 55
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13418,7 +13418,7 @@ filtrated_packets:
   - frame_number: 1223
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13435,7 +13435,7 @@ filtrated_packets:
   - frame_number: 1236
   - len_frame_pcap: 113
   - len_frame_medium: 117
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13454,7 +13454,7 @@ filtrated_packets:
   - frame_number: 1237
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13471,7 +13471,7 @@ filtrated_packets:
   - frame_number: 1450
   - len_frame_pcap: 55
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13488,7 +13488,7 @@ filtrated_packets:
   - frame_number: 1451
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13505,7 +13505,7 @@ filtrated_packets:
   - frame_number: 1456
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13523,7 +13523,7 @@ filtrated_packets:
   - frame_number: 1457
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13540,7 +13540,7 @@ filtrated_packets:
   - frame_number: 1458
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13558,7 +13558,7 @@ filtrated_packets:
   - frame_number: 1468
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13575,7 +13575,7 @@ filtrated_packets:
   - frame_number: 1550
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13592,7 +13592,7 @@ filtrated_packets:
   - frame_number: 1553
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13609,7 +13609,7 @@ filtrated_packets:
   - frame_number: 1554
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13626,7 +13626,7 @@ filtrated_packets:
   - frame_number: 1555
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13643,7 +13643,7 @@ filtrated_packets:
   - frame_number: 1556
   - len_frame_pcap: 237
   - len_frame_medium: 241
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13667,7 +13667,7 @@ filtrated_packets:
   - frame_number: 1557
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13684,7 +13684,7 @@ filtrated_packets:
   - frame_number: 1558
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13754,7 +13754,7 @@ filtrated_packets:
   - frame_number: 1559
   - len_frame_pcap: 1434
   - len_frame_medium: 1438
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13824,7 +13824,7 @@ filtrated_packets:
   - frame_number: 1560
   - len_frame_pcap: 316
   - len_frame_medium: 320
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13851,7 +13851,7 @@ filtrated_packets:
   - frame_number: 1561
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13868,7 +13868,7 @@ filtrated_packets:
   - frame_number: 1562
   - len_frame_pcap: 180
   - len_frame_medium: 184
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13890,7 +13890,7 @@ filtrated_packets:
   - frame_number: 1563
   - len_frame_pcap: 296
   - len_frame_medium: 300
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13916,7 +13916,7 @@ filtrated_packets:
   - frame_number: 1564
   - len_frame_pcap: 574
   - len_frame_medium: 578
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13953,7 +13953,7 @@ filtrated_packets:
   - frame_number: 1566
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -13970,7 +13970,7 @@ filtrated_packets:
   - frame_number: 1567
   - len_frame_pcap: 180
   - len_frame_medium: 184
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -13992,7 +13992,7 @@ filtrated_packets:
   - frame_number: 1570
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14009,7 +14009,7 @@ filtrated_packets:
   - frame_number: 1572
   - len_frame_pcap: 107
   - len_frame_medium: 111
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14028,7 +14028,7 @@ filtrated_packets:
   - frame_number: 1574
   - len_frame_pcap: 224
   - len_frame_medium: 228
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14051,7 +14051,7 @@ filtrated_packets:
   - frame_number: 1576
   - len_frame_pcap: 575
   - len_frame_medium: 579
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14088,7 +14088,7 @@ filtrated_packets:
   - frame_number: 1582
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14105,7 +14105,7 @@ filtrated_packets:
   - frame_number: 1583
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14122,7 +14122,7 @@ filtrated_packets:
   - frame_number: 1587
   - len_frame_pcap: 433
   - len_frame_medium: 437
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14153,7 +14153,7 @@ filtrated_packets:
   - frame_number: 1588
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14170,7 +14170,7 @@ filtrated_packets:
   - frame_number: 1589
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14240,7 +14240,7 @@ filtrated_packets:
   - frame_number: 1590
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14310,7 +14310,7 @@ filtrated_packets:
   - frame_number: 1591
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14380,7 +14380,7 @@ filtrated_packets:
   - frame_number: 1592
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14450,7 +14450,7 @@ filtrated_packets:
   - frame_number: 1593
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14467,7 +14467,7 @@ filtrated_packets:
   - frame_number: 1594
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14537,7 +14537,7 @@ filtrated_packets:
   - frame_number: 1595
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14607,7 +14607,7 @@ filtrated_packets:
   - frame_number: 1596
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14624,7 +14624,7 @@ filtrated_packets:
   - frame_number: 1597
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14694,7 +14694,7 @@ filtrated_packets:
   - frame_number: 1598
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14764,7 +14764,7 @@ filtrated_packets:
   - frame_number: 1599
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14834,7 +14834,7 @@ filtrated_packets:
   - frame_number: 1600
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14904,7 +14904,7 @@ filtrated_packets:
   - frame_number: 1601
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -14921,7 +14921,7 @@ filtrated_packets:
   - frame_number: 1602
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -14991,7 +14991,7 @@ filtrated_packets:
   - frame_number: 1603
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15061,7 +15061,7 @@ filtrated_packets:
   - frame_number: 1604
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15078,7 +15078,7 @@ filtrated_packets:
   - frame_number: 1605
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15148,7 +15148,7 @@ filtrated_packets:
   - frame_number: 1606
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15218,7 +15218,7 @@ filtrated_packets:
   - frame_number: 1607
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15235,7 +15235,7 @@ filtrated_packets:
   - frame_number: 1608
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15305,7 +15305,7 @@ filtrated_packets:
   - frame_number: 1609
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15375,7 +15375,7 @@ filtrated_packets:
   - frame_number: 1610
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15392,7 +15392,7 @@ filtrated_packets:
   - frame_number: 1611
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15462,7 +15462,7 @@ filtrated_packets:
   - frame_number: 1612
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15532,7 +15532,7 @@ filtrated_packets:
   - frame_number: 1613
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15549,7 +15549,7 @@ filtrated_packets:
   - frame_number: 1614
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15619,7 +15619,7 @@ filtrated_packets:
   - frame_number: 1615
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15689,7 +15689,7 @@ filtrated_packets:
   - frame_number: 1616
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15706,7 +15706,7 @@ filtrated_packets:
   - frame_number: 1617
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15776,7 +15776,7 @@ filtrated_packets:
   - frame_number: 1618
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15846,7 +15846,7 @@ filtrated_packets:
   - frame_number: 1619
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -15863,7 +15863,7 @@ filtrated_packets:
   - frame_number: 1620
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -15933,7 +15933,7 @@ filtrated_packets:
   - frame_number: 1621
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16003,7 +16003,7 @@ filtrated_packets:
   - frame_number: 1622
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16020,7 +16020,7 @@ filtrated_packets:
   - frame_number: 1623
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16090,7 +16090,7 @@ filtrated_packets:
   - frame_number: 1624
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16160,7 +16160,7 @@ filtrated_packets:
   - frame_number: 1625
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16177,7 +16177,7 @@ filtrated_packets:
   - frame_number: 1626
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16247,7 +16247,7 @@ filtrated_packets:
   - frame_number: 1627
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16317,7 +16317,7 @@ filtrated_packets:
   - frame_number: 1628
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16334,7 +16334,7 @@ filtrated_packets:
   - frame_number: 1629
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16404,7 +16404,7 @@ filtrated_packets:
   - frame_number: 1630
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16474,7 +16474,7 @@ filtrated_packets:
   - frame_number: 1631
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16491,7 +16491,7 @@ filtrated_packets:
   - frame_number: 1632
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16561,7 +16561,7 @@ filtrated_packets:
   - frame_number: 1633
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16631,7 +16631,7 @@ filtrated_packets:
   - frame_number: 1634
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16648,7 +16648,7 @@ filtrated_packets:
   - frame_number: 1635
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16718,7 +16718,7 @@ filtrated_packets:
   - frame_number: 1636
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16788,7 +16788,7 @@ filtrated_packets:
   - frame_number: 1637
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16858,7 +16858,7 @@ filtrated_packets:
   - frame_number: 1638
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -16928,7 +16928,7 @@ filtrated_packets:
   - frame_number: 1639
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -16945,7 +16945,7 @@ filtrated_packets:
   - frame_number: 1640
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17015,7 +17015,7 @@ filtrated_packets:
   - frame_number: 1641
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17085,7 +17085,7 @@ filtrated_packets:
   - frame_number: 1642
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -17102,7 +17102,7 @@ filtrated_packets:
   - frame_number: 1643
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17172,7 +17172,7 @@ filtrated_packets:
   - frame_number: 1644
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17242,7 +17242,7 @@ filtrated_packets:
   - frame_number: 1645
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17312,7 +17312,7 @@ filtrated_packets:
   - frame_number: 1646
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -17329,7 +17329,7 @@ filtrated_packets:
   - frame_number: 1647
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17399,7 +17399,7 @@ filtrated_packets:
   - frame_number: 1648
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17469,7 +17469,7 @@ filtrated_packets:
   - frame_number: 1649
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17539,7 +17539,7 @@ filtrated_packets:
   - frame_number: 1650
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -17556,7 +17556,7 @@ filtrated_packets:
   - frame_number: 1651
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17626,7 +17626,7 @@ filtrated_packets:
   - frame_number: 1652
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17696,7 +17696,7 @@ filtrated_packets:
   - frame_number: 1653
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17766,7 +17766,7 @@ filtrated_packets:
   - frame_number: 1654
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -17783,7 +17783,7 @@ filtrated_packets:
   - frame_number: 1655
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17853,7 +17853,7 @@ filtrated_packets:
   - frame_number: 1656
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17923,7 +17923,7 @@ filtrated_packets:
   - frame_number: 1657
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -17993,7 +17993,7 @@ filtrated_packets:
   - frame_number: 1658
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -18010,7 +18010,7 @@ filtrated_packets:
   - frame_number: 1659
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18080,7 +18080,7 @@ filtrated_packets:
   - frame_number: 1660
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18150,7 +18150,7 @@ filtrated_packets:
   - frame_number: 1661
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18220,7 +18220,7 @@ filtrated_packets:
   - frame_number: 1662
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18290,7 +18290,7 @@ filtrated_packets:
   - frame_number: 1663
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -18307,7 +18307,7 @@ filtrated_packets:
   - frame_number: 1664
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18377,7 +18377,7 @@ filtrated_packets:
   - frame_number: 1665
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18447,7 +18447,7 @@ filtrated_packets:
   - frame_number: 1666
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18517,7 +18517,7 @@ filtrated_packets:
   - frame_number: 1667
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18587,7 +18587,7 @@ filtrated_packets:
   - frame_number: 1668
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -18604,7 +18604,7 @@ filtrated_packets:
   - frame_number: 1669
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18674,7 +18674,7 @@ filtrated_packets:
   - frame_number: 1670
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18744,7 +18744,7 @@ filtrated_packets:
   - frame_number: 1671
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18814,7 +18814,7 @@ filtrated_packets:
   - frame_number: 1672
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -18831,7 +18831,7 @@ filtrated_packets:
   - frame_number: 1673
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18901,7 +18901,7 @@ filtrated_packets:
   - frame_number: 1674
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -18971,7 +18971,7 @@ filtrated_packets:
   - frame_number: 1675
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19041,7 +19041,7 @@ filtrated_packets:
   - frame_number: 1676
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19058,7 +19058,7 @@ filtrated_packets:
   - frame_number: 1677
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19128,7 +19128,7 @@ filtrated_packets:
   - frame_number: 1678
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19198,7 +19198,7 @@ filtrated_packets:
   - frame_number: 1679
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19215,7 +19215,7 @@ filtrated_packets:
   - frame_number: 1680
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19285,7 +19285,7 @@ filtrated_packets:
   - frame_number: 1681
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19355,7 +19355,7 @@ filtrated_packets:
   - frame_number: 1682
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19372,7 +19372,7 @@ filtrated_packets:
   - frame_number: 1683
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19442,7 +19442,7 @@ filtrated_packets:
   - frame_number: 1684
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19512,7 +19512,7 @@ filtrated_packets:
   - frame_number: 1685
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19529,7 +19529,7 @@ filtrated_packets:
   - frame_number: 1686
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19599,7 +19599,7 @@ filtrated_packets:
   - frame_number: 1687
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19669,7 +19669,7 @@ filtrated_packets:
   - frame_number: 1688
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19686,7 +19686,7 @@ filtrated_packets:
   - frame_number: 1689
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19756,7 +19756,7 @@ filtrated_packets:
   - frame_number: 1690
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19826,7 +19826,7 @@ filtrated_packets:
   - frame_number: 1691
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -19843,7 +19843,7 @@ filtrated_packets:
   - frame_number: 1692
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19913,7 +19913,7 @@ filtrated_packets:
   - frame_number: 1693
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -19983,7 +19983,7 @@ filtrated_packets:
   - frame_number: 1694
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20000,7 +20000,7 @@ filtrated_packets:
   - frame_number: 1695
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20070,7 +20070,7 @@ filtrated_packets:
   - frame_number: 1696
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20140,7 +20140,7 @@ filtrated_packets:
   - frame_number: 1697
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20157,7 +20157,7 @@ filtrated_packets:
   - frame_number: 1698
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20227,7 +20227,7 @@ filtrated_packets:
   - frame_number: 1699
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20297,7 +20297,7 @@ filtrated_packets:
   - frame_number: 1700
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20314,7 +20314,7 @@ filtrated_packets:
   - frame_number: 1701
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20384,7 +20384,7 @@ filtrated_packets:
   - frame_number: 1702
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20454,7 +20454,7 @@ filtrated_packets:
   - frame_number: 1703
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20524,7 +20524,7 @@ filtrated_packets:
   - frame_number: 1704
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20541,7 +20541,7 @@ filtrated_packets:
   - frame_number: 1705
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20611,7 +20611,7 @@ filtrated_packets:
   - frame_number: 1706
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20628,7 +20628,7 @@ filtrated_packets:
   - frame_number: 1707
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20698,7 +20698,7 @@ filtrated_packets:
   - frame_number: 1708
   - len_frame_pcap: 183
   - len_frame_medium: 187
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20720,7 +20720,7 @@ filtrated_packets:
   - frame_number: 1709
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20737,7 +20737,7 @@ filtrated_packets:
   - frame_number: 1767
   - len_frame_pcap: 66
   - len_frame_medium: 70
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20754,7 +20754,7 @@ filtrated_packets:
   - frame_number: 1775
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20771,7 +20771,7 @@ filtrated_packets:
   - frame_number: 1776
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20788,7 +20788,7 @@ filtrated_packets:
   - frame_number: 1777
   - len_frame_pcap: 285
   - len_frame_medium: 289
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -20814,7 +20814,7 @@ filtrated_packets:
   - frame_number: 1778
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20831,7 +20831,7 @@ filtrated_packets:
   - frame_number: 1779
   - len_frame_pcap: 1354
   - len_frame_medium: 1358
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20898,7 +20898,7 @@ filtrated_packets:
   - frame_number: 1780
   - len_frame_pcap: 1354
   - len_frame_medium: 1358
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20965,7 +20965,7 @@ filtrated_packets:
   - frame_number: 1781
   - len_frame_pcap: 420
   - len_frame_medium: 424
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -20996,7 +20996,7 @@ filtrated_packets:
   - frame_number: 1782
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21013,7 +21013,7 @@ filtrated_packets:
   - frame_number: 1783
   - len_frame_pcap: 180
   - len_frame_medium: 184
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21035,7 +21035,7 @@ filtrated_packets:
   - frame_number: 1784
   - len_frame_pcap: 565
   - len_frame_medium: 569
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21071,7 +21071,7 @@ filtrated_packets:
   - frame_number: 1792
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21088,7 +21088,7 @@ filtrated_packets:
   - frame_number: 1793
   - len_frame_pcap: 105
   - len_frame_medium: 109
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21107,7 +21107,7 @@ filtrated_packets:
   - frame_number: 1794
   - len_frame_pcap: 478
   - len_frame_medium: 482
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21140,7 +21140,7 @@ filtrated_packets:
   - frame_number: 1795
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21157,7 +21157,7 @@ filtrated_packets:
   - frame_number: 1902
   - len_frame_pcap: 311
   - len_frame_medium: 315
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21184,7 +21184,7 @@ filtrated_packets:
   - frame_number: 1903
   - len_frame_pcap: 520
   - len_frame_medium: 524
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21219,7 +21219,7 @@ filtrated_packets:
   - frame_number: 1904
   - len_frame_pcap: 1903
   - len_frame_medium: 1907
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21307,7 +21307,7 @@ filtrated_packets:
   - frame_number: 1905
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21324,7 +21324,7 @@ filtrated_packets:
   - frame_number: 1906
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21341,7 +21341,7 @@ filtrated_packets:
   - frame_number: 1925
   - len_frame_pcap: 326
   - len_frame_medium: 330
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21368,7 +21368,7 @@ filtrated_packets:
   - frame_number: 1926
   - len_frame_pcap: 872
   - len_frame_medium: 876
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21416,7 +21416,7 @@ filtrated_packets:
   - frame_number: 1927
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21433,7 +21433,7 @@ filtrated_packets:
   - frame_number: 1931
   - len_frame_pcap: 296
   - len_frame_medium: 300
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21459,7 +21459,7 @@ filtrated_packets:
   - frame_number: 1932
   - len_frame_pcap: 255
   - len_frame_medium: 259
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21483,7 +21483,7 @@ filtrated_packets:
   - frame_number: 1933
   - len_frame_pcap: 123
   - len_frame_medium: 127
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21502,7 +21502,7 @@ filtrated_packets:
   - frame_number: 1934
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21519,7 +21519,7 @@ filtrated_packets:
   - frame_number: 1935
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21537,7 +21537,7 @@ filtrated_packets:
   - frame_number: 1936
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21554,7 +21554,7 @@ filtrated_packets:
   - frame_number: 1937
   - len_frame_pcap: 100
   - len_frame_medium: 104
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21572,7 +21572,7 @@ filtrated_packets:
   - frame_number: 1938
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21589,7 +21589,7 @@ filtrated_packets:
   - frame_number: 1999
   - len_frame_pcap: 433
   - len_frame_medium: 437
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -21620,7 +21620,7 @@ filtrated_packets:
   - frame_number: 2000
   - len_frame_pcap: 60
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21637,7 +21637,7 @@ filtrated_packets:
   - frame_number: 2001
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21707,7 +21707,7 @@ filtrated_packets:
   - frame_number: 2002
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21777,7 +21777,7 @@ filtrated_packets:
   - frame_number: 2003
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21847,7 +21847,7 @@ filtrated_packets:
   - frame_number: 2004
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21917,7 +21917,7 @@ filtrated_packets:
   - frame_number: 2005
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -21987,7 +21987,7 @@ filtrated_packets:
   - frame_number: 2006
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22057,7 +22057,7 @@ filtrated_packets:
   - frame_number: 2007
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22127,7 +22127,7 @@ filtrated_packets:
   - frame_number: 2008
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22144,7 +22144,7 @@ filtrated_packets:
   - frame_number: 2009
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22214,7 +22214,7 @@ filtrated_packets:
   - frame_number: 2010
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22284,7 +22284,7 @@ filtrated_packets:
   - frame_number: 2011
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22354,7 +22354,7 @@ filtrated_packets:
   - frame_number: 2012
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22371,7 +22371,7 @@ filtrated_packets:
   - frame_number: 2014
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22441,7 +22441,7 @@ filtrated_packets:
   - frame_number: 2015
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22511,7 +22511,7 @@ filtrated_packets:
   - frame_number: 2016
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22528,7 +22528,7 @@ filtrated_packets:
   - frame_number: 2017
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22598,7 +22598,7 @@ filtrated_packets:
   - frame_number: 2018
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22668,7 +22668,7 @@ filtrated_packets:
   - frame_number: 2019
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22685,7 +22685,7 @@ filtrated_packets:
   - frame_number: 2020
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22755,7 +22755,7 @@ filtrated_packets:
   - frame_number: 2021
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22825,7 +22825,7 @@ filtrated_packets:
   - frame_number: 2022
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22842,7 +22842,7 @@ filtrated_packets:
   - frame_number: 2023
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22912,7 +22912,7 @@ filtrated_packets:
   - frame_number: 2024
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -22982,7 +22982,7 @@ filtrated_packets:
   - frame_number: 2025
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -22999,7 +22999,7 @@ filtrated_packets:
   - frame_number: 2026
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23069,7 +23069,7 @@ filtrated_packets:
   - frame_number: 2027
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23139,7 +23139,7 @@ filtrated_packets:
   - frame_number: 2028
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23156,7 +23156,7 @@ filtrated_packets:
   - frame_number: 2029
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23226,7 +23226,7 @@ filtrated_packets:
   - frame_number: 2030
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23296,7 +23296,7 @@ filtrated_packets:
   - frame_number: 2031
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23313,7 +23313,7 @@ filtrated_packets:
   - frame_number: 2032
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23383,7 +23383,7 @@ filtrated_packets:
   - frame_number: 2033
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23453,7 +23453,7 @@ filtrated_packets:
   - frame_number: 2034
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23470,7 +23470,7 @@ filtrated_packets:
   - frame_number: 2035
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23540,7 +23540,7 @@ filtrated_packets:
   - frame_number: 2036
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23610,7 +23610,7 @@ filtrated_packets:
   - frame_number: 2037
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23627,7 +23627,7 @@ filtrated_packets:
   - frame_number: 2038
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23697,7 +23697,7 @@ filtrated_packets:
   - frame_number: 2039
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23767,7 +23767,7 @@ filtrated_packets:
   - frame_number: 2040
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23784,7 +23784,7 @@ filtrated_packets:
   - frame_number: 2041
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23854,7 +23854,7 @@ filtrated_packets:
   - frame_number: 2042
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -23924,7 +23924,7 @@ filtrated_packets:
   - frame_number: 2043
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -23941,7 +23941,7 @@ filtrated_packets:
   - frame_number: 2044
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24011,7 +24011,7 @@ filtrated_packets:
   - frame_number: 2045
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24081,7 +24081,7 @@ filtrated_packets:
   - frame_number: 2046
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24098,7 +24098,7 @@ filtrated_packets:
   - frame_number: 2047
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24168,7 +24168,7 @@ filtrated_packets:
   - frame_number: 2048
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24238,7 +24238,7 @@ filtrated_packets:
   - frame_number: 2049
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24255,7 +24255,7 @@ filtrated_packets:
   - frame_number: 2050
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24325,7 +24325,7 @@ filtrated_packets:
   - frame_number: 2051
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24395,7 +24395,7 @@ filtrated_packets:
   - frame_number: 2052
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24412,7 +24412,7 @@ filtrated_packets:
   - frame_number: 2053
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24482,7 +24482,7 @@ filtrated_packets:
   - frame_number: 2054
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24552,7 +24552,7 @@ filtrated_packets:
   - frame_number: 2055
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24569,7 +24569,7 @@ filtrated_packets:
   - frame_number: 2056
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24639,7 +24639,7 @@ filtrated_packets:
   - frame_number: 2057
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24709,7 +24709,7 @@ filtrated_packets:
   - frame_number: 2058
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24779,7 +24779,7 @@ filtrated_packets:
   - frame_number: 2059
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24796,7 +24796,7 @@ filtrated_packets:
   - frame_number: 2060
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24866,7 +24866,7 @@ filtrated_packets:
   - frame_number: 2061
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -24883,7 +24883,7 @@ filtrated_packets:
   - frame_number: 2062
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -24953,7 +24953,7 @@ filtrated_packets:
   - frame_number: 2063
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25023,7 +25023,7 @@ filtrated_packets:
   - frame_number: 2064
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -25040,7 +25040,7 @@ filtrated_packets:
   - frame_number: 2065
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25110,7 +25110,7 @@ filtrated_packets:
   - frame_number: 2066
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25180,7 +25180,7 @@ filtrated_packets:
   - frame_number: 2067
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25250,7 +25250,7 @@ filtrated_packets:
   - frame_number: 2068
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25320,7 +25320,7 @@ filtrated_packets:
   - frame_number: 2069
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -25337,7 +25337,7 @@ filtrated_packets:
   - frame_number: 2070
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25407,7 +25407,7 @@ filtrated_packets:
   - frame_number: 2071
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25477,7 +25477,7 @@ filtrated_packets:
   - frame_number: 2072
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25547,7 +25547,7 @@ filtrated_packets:
   - frame_number: 2073
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25617,7 +25617,7 @@ filtrated_packets:
   - frame_number: 2074
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -25634,7 +25634,7 @@ filtrated_packets:
   - frame_number: 2075
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25704,7 +25704,7 @@ filtrated_packets:
   - frame_number: 2076
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25774,7 +25774,7 @@ filtrated_packets:
   - frame_number: 2077
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25844,7 +25844,7 @@ filtrated_packets:
   - frame_number: 2078
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -25914,7 +25914,7 @@ filtrated_packets:
   - frame_number: 2079
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -25931,7 +25931,7 @@ filtrated_packets:
   - frame_number: 2080
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26001,7 +26001,7 @@ filtrated_packets:
   - frame_number: 2081
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26071,7 +26071,7 @@ filtrated_packets:
   - frame_number: 2082
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26141,7 +26141,7 @@ filtrated_packets:
   - frame_number: 2083
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26211,7 +26211,7 @@ filtrated_packets:
   - frame_number: 2084
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -26228,7 +26228,7 @@ filtrated_packets:
   - frame_number: 2085
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26298,7 +26298,7 @@ filtrated_packets:
   - frame_number: 2086
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26368,7 +26368,7 @@ filtrated_packets:
   - frame_number: 2087
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -26385,7 +26385,7 @@ filtrated_packets:
   - frame_number: 2088
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26455,7 +26455,7 @@ filtrated_packets:
   - frame_number: 2089
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26525,7 +26525,7 @@ filtrated_packets:
   - frame_number: 2090
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26595,7 +26595,7 @@ filtrated_packets:
   - frame_number: 2091
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26665,7 +26665,7 @@ filtrated_packets:
   - frame_number: 2092
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -26682,7 +26682,7 @@ filtrated_packets:
   - frame_number: 2093
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26752,7 +26752,7 @@ filtrated_packets:
   - frame_number: 2094
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26822,7 +26822,7 @@ filtrated_packets:
   - frame_number: 2095
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -26839,7 +26839,7 @@ filtrated_packets:
   - frame_number: 2096
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26909,7 +26909,7 @@ filtrated_packets:
   - frame_number: 2097
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -26979,7 +26979,7 @@ filtrated_packets:
   - frame_number: 2098
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -26996,7 +26996,7 @@ filtrated_packets:
   - frame_number: 2099
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27066,7 +27066,7 @@ filtrated_packets:
   - frame_number: 2100
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27136,7 +27136,7 @@ filtrated_packets:
   - frame_number: 2101
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27206,7 +27206,7 @@ filtrated_packets:
   - frame_number: 2102
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -27223,7 +27223,7 @@ filtrated_packets:
   - frame_number: 2103
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27293,7 +27293,7 @@ filtrated_packets:
   - frame_number: 2104
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27363,7 +27363,7 @@ filtrated_packets:
   - frame_number: 2105
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -27380,7 +27380,7 @@ filtrated_packets:
   - frame_number: 2106
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27450,7 +27450,7 @@ filtrated_packets:
   - frame_number: 2107
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -27467,7 +27467,7 @@ filtrated_packets:
   - frame_number: 2108
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27537,7 +27537,7 @@ filtrated_packets:
   - frame_number: 2109
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27607,7 +27607,7 @@ filtrated_packets:
   - frame_number: 2110
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27677,7 +27677,7 @@ filtrated_packets:
   - frame_number: 2111
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -27694,7 +27694,7 @@ filtrated_packets:
   - frame_number: 2112
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27764,7 +27764,7 @@ filtrated_packets:
   - frame_number: 2113
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -27781,7 +27781,7 @@ filtrated_packets:
   - frame_number: 2114
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27851,7 +27851,7 @@ filtrated_packets:
   - frame_number: 2115
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27921,7 +27921,7 @@ filtrated_packets:
   - frame_number: 2116
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -27991,7 +27991,7 @@ filtrated_packets:
   - frame_number: 2117
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -28008,7 +28008,7 @@ filtrated_packets:
   - frame_number: 2118
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -28078,7 +28078,7 @@ filtrated_packets:
   - frame_number: 2119
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4
@@ -28095,7 +28095,7 @@ filtrated_packets:
   - frame_number: 2120
   - len_frame_pcap: 1432
   - len_frame_medium: 1436
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -28165,7 +28165,7 @@ filtrated_packets:
   - frame_number: 2121
   - len_frame_pcap: 183
   - len_frame_medium: 187
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 84:B8:02:66:72:34
   - dst_mac: 30:65:EC:83:32:36
   - ether_type: IPv4
@@ -28187,7 +28187,7 @@ filtrated_packets:
   - frame_number: 2122
   - len_frame_pcap: 54
   - len_frame_medium: 64
-  - frame_type: Ethernet 2
+  - frame_type: Ethernet II
   - src_mac: 30:65:EC:83:32:36
   - dst_mac: 84:B8:02:66:72:34
   - ether_type: IPv4

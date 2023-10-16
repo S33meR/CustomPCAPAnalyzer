@@ -1,23 +1,46 @@
 import ruamel.yaml.scalarstring
-from scapy.all import rdpcap
+import scapy.all as scapy
 import ruamel.yaml as yaml
 from collections import *
 import os
 import argparse
+import configparser
 
-class IPv4Stream:
-    ip_dst = []
-    ip_src = []
-    port_dst = []
-    port_src = []
-    frames = []
-    def __init__(self, p_ip_dst, p_ip_src, p_port_dst, p_port_src, p_frameNumber):
-        self.ip_dst = p_ip_dst
-        self.ip_src = p_ip_src
-        self.port_dst = p_port_dst
-        self.port_src = p_port_src
-        self.frames = []
-        self.frames.append(p_frameNumber + 1)
+
+class Frame:
+    index = None
+    hex_value = None
+    hex_value_formated = None
+
+    eth_type = None
+    dest_mac = None
+    src_mac = None
+    length_api = None
+    length_med = None
+    sap = None
+    app_protocol = None
+
+    src_ip = None
+    dest_ip = None
+    nested_ip = None
+    size_ip = None
+
+    src_port = None
+    dest_port = None
+    nested_port = None
+
+    urg_flag = None
+    ack_flag = None
+    push_flag = None
+    reset_flag = None
+    syn_flag = None
+    fin_flag = None
+
+    icmp_type = None
+
+    arp_opcode = None
+    arp_src_ip = None
+    arp_dest_ip = None
 
 
 def getMin(x,y):
@@ -66,7 +89,7 @@ def calculateFrameType(packet):
     frameTypeNumber = (frameBytes[0] << 8) + frameBytes[1] ## << 8 posuniem o 8 bitov do lava aby som mohol spravit 16bit cislo
     frameType = 'Unknown'
     if frameTypeNumber > 1500:
-        frameType = 'Ethernet 2'
+        frameType = 'Ethernet II'
 
     elif frameTypeNumber < 1500:
 
@@ -79,8 +102,6 @@ def calculateFrameType(packet):
             frameType = 'IEEE 802.3 LLC'
 
     return frameType
-
-
 
 
 def calculateEtherType(packet, frameType):
@@ -152,6 +173,7 @@ def calculateIPdestinationport(packet):
     frameBytes = packetBytes[ipHeader + 16:ipHeader + 18]
     destinationport = int.from_bytes(frameBytes, byteorder='big')
     return destinationport
+
 def calculateAppProtocol(packet):
 
     if (appMap.get(calculateIPsourceport(packet), 'Unknown') != 'Unknown' and appMap.get(calculateIPdestinationport(packet), 'Unknown') != 'Unknown'):
@@ -167,38 +189,341 @@ def calculateAppProtocol(packet):
 
     return appProtocol
 
-def get_transport_protocol(p_frame):
-    head_len = (getDataFromFrame(p_frame, 14, 14, True) - int(
-        getDataFromFrame(p_frame, 14, 14, True) / 16) * 16) * 4
-    return p_frame[14 + head_len:len(p_frame)]
 
-def getDataFromFrame(packet, pStart, pEnd, pInteger = False):
-    if pInteger:
-        return int.from_bytes(packet[pStart:(pEnd + 1)], byteorder='big')
+'''def loading(f,packet):
+    f.len_frame_pcap = calculateFrameLength(packet)
+    f.len_frame_medium = calculateFrameLengthMedium(packet)
+    f.src_mac = calculateSourceMAC(packet)
+    f.dest_mac = calculateDestinationMAC(packet)
+    if (calculateFrameType(packet) == 'Ethernet 2'):
+        f.eth_type = calculateEtherType(packet, calculateFrameType(packet))
+        f.src_ip = calculateIPv4source(packet)
+        f.dest_ip = calculateIPv4destination(packet)
+        if (calculateEtherType(packet, calculateFrameType(packet)) == 'IPv4'):
+            f.size_ip = calculateipHeaderSize(f.hex_value[28::])
+            f.nested_port = calculateIPv4protocol(packet)
+            if (calculateIPv4protocol(packet) in 'TCP' or 'UDP'):
+                f.src_port = calculateIPsourceport(packet)
+                f.dst_port = calculateIPdestinationport(packet)
+                appProtocol = calculateAppProtocol(packet)
+                print(f.src_port)
+                f.app_protocol = appMap.get(appProtocol, 'Unknown')
+                #if (calculateIPv4protocol(packet == 'TCP')):
+                    #tcpAnalysis(f)'''
+def get_length_medium(len_api):
+    if len_api < 60:
+        len_med = 64
     else:
-        return packet[pStart:(pEnd + 1)]
+        len_med = len_api + 4
+    return len_med
+def start(f,packet):
+    f.length_api = calculateFrameLength(packet)
+    f.length_med = calculateFrameLengthMedium(packet)
+    f.app_protocol = appMap.get(calculateAppProtocol(packet))
 
-def IPinStream(p_streams, p_ipDestination, p_ipSource, p_portSource = 0, p_portDestination = 0):
+    f.eth_type = calculateFrameType(packet)
+    f.dest_mac,f.src_mac = get_mac(f.hex_value)
 
-    for i in range (0, len(p_streams)):
-        if ((p_streams[i].ip_src == p_ipDestination) and (p_streams[i].ip_dst == p_ipSource) and (p_streams[i].port_dst == p_portSource) and (p_streams[i].port_src == p_portDestination))  or ((p_streams[i].ip_src == p_ipSource) and
-        (p_streams[i].ip_dst == p_ipDestination) and (p_streams[i].port_dst == p_portDestination) and (p_streams[i].port_src == p_portSource)):
-            return i
-    return -1
+    nested_protocols(f)
 
-def insertToStream(p_arrayStreams, p_frameNumber, p_ipSource, p_ipDestination, p_portSource = 0, p_portDestination = 0):
+def get_mac(hex_v):
+    dest = hex_v[0:12]
+    src = hex_v[12:24]
+    return dest, src
 
-    curStr = IPinStream(p_arrayStreams, p_ipSource, p_ipDestination, p_portSource, p_portDestination)
-    if curStr >= 0:
-        p_arrayStreams[curStr].frames.append(p_frameNumber + 1)
-    elif curStr == -1:
-        p_arrayStreams.append(IPv4Stream(p_ipSource, p_ipDestination, p_portSource, p_portDestination, p_frameNumber))
+def read_cfg():
+    cfg = configparser.ConfigParser()
+    cfg.read('config.cfg')
+    return cfg
+
+
+def ip(ip_hex):
+    size = int(ip_hex[1], 16) * 4
+    try:
+        nested_ip = config.get('IpProtocols', str(int(ip_hex[18: 20], 16)))
+    except configparser.NoOptionError:
+        nested_ip = None
+    src_ip = str(int(ip_hex[24: 26], 16)) + "." + str(int(ip_hex[26: 28], 16)) + "." + str(
+        int(ip_hex[28: 30], 16)) + "." + str(int(ip_hex[30: 32], 16))
+    ips.append(src_ip)
+    dest_ip = str(int(ip_hex[32: 34], 16)) + "." + str(int(ip_hex[34: 36], 16)) + "." + str(
+        int(ip_hex[36: 38], 16)) + "." + str(int(ip_hex[38: 40], 16))
+
+    return src_ip, dest_ip, nested_ip, size
+def nested_mac(nested_protocol_dec, section):
+    try:
+        nested = config.get(section, str(nested_protocol_dec))
+    except configparser.NoOptionError:
+        nested = None
+    return nested
+def nested_protocols(f):
+    if f.eth_type == "Ethernet II":
+        f.nested_mac = nested_mac(int(f.hex_value[24:28], 16), 'EtherTypes')
+        if int(f.hex_value[24:28], 16) == 2048:
+            f.src_ip, f.dest_ip, f.nested_ip, f.size_ip = ip(f.hex_value[28::])
+            if f.nested_ip is not None:
+                nested_internet(f)
+
+    elif "802.3 LLC" == f.eth_type:
+        f.nested_mac = nested_mac(int(f.hex_value[28:30], 16), 'SAPs')
+
+    elif "802.3 - raw" == f.eth_type:
+        f.nested_mac = "IPX"
+
+    elif "802.3 LLC + SNAP" == f.eth_type:
+        f.nested_mac = nested_mac(int(f.hex_value[40:44], 16), 'EtherTypes')
+
+
+def nested_internet(f):
+    try:
+        if f.nested_ip == "TCP":
+            f.src_port = int(f.hex_value[(28 + (f.size_ip * 2)): (32 + (f.size_ip * 2))], 16)
+            f.dest_port = int(f.hex_value[(32 + (f.size_ip * 2)): (36 + (f.size_ip * 2))], 16)
+            tcp_analyze(f)
+            f.nested_port = config.get('TCP_ports', str(f.dest_port))
+        elif f.nested_ip == "UDP":
+            f.src_port = int(f.hex_value[(28 + (f.size_ip * 2)): (32 + (f.size_ip * 2))], 16)
+            f.dest_port = int(f.hex_value[(32 + (f.size_ip * 2)): (36 + (f.size_ip * 2))], 16)
+            f.nested_port = config.get('UDP_ports', str(f.dest_port))
+        #elif f.nested_ip == "ICMP":
+            #icmp_analyze(f)
+    except configparser.NoOptionError:
+        f.nested_port = None
+
+
+def tcp_analyze(f):
+    flags = str(bin(int(f.hex_value[(53 + (f.size_ip * 2)): (56 + (f.size_ip * 2))], 16)))[2::]
+    flags = flags[::-1]
+    while len(flags) < 6:
+        flags += "0"
+    flags = flags[::-1]
+
+    if flags[0] == "1":
+        f.urg_flag = True
+    if flags[1] == "1":
+        f.ack_flag = True
+    if flags[2] == "1":
+        f.push_flag = True
+    if flags[3] == "1":
+        f.reset_flag = True
+    if flags[4] == "1":
+        f.syn_flag = True
+        if f.ack_flag is None:
+            syns.append(f.index)
+    if flags[5] == "1":
+        f.fin_flag = True
+def get_tcp_comms(frms, port):
+    syn, sync_ack, ack, datas, socket, out = None, None, None, [], [], []
+    for x in syns:
+        if frms[x].dest_port == port or frms[x].src_port == port:
+            print(1)
+            syn = frms[x]
+
+            for u in range(x, len(frms)):
+                if (syn.src_ip == frms[u].dest_ip) and (syn.dest_ip == frms[u].src_ip) and (
+                        syn.src_port == frms[u].dest_port) and (syn.dest_port == frms[u].src_port):
+                    if (frms[u].syn_flag == True) and (frms[u].ack_flag == True):
+                        sync_ack = frms[u]
+
+                        break
+            for u in range(sync_ack.index + 1, len(frms)):
+                if (syn.src_ip == frms[u].src_ip) and (syn.dest_ip == frms[u].dest_ip) and (
+                        syn.src_port == frms[u].src_port) and (syn.dest_port == frms[u].dest_port):
+                    if frms[u].ack_flag:
+                        ack = frms[u]
+
+                        break
+            if (syn is not None) and (sync_ack is not None) and (ack is not None):
+                socket.append(syn.src_ip)
+                socket.append(syn.src_port)
+                socket.append(syn.dest_ip)
+                socket.append(syn.dest_port)
+                for u in range(ack.index + 1, len(frms)):
+                    if (frms[u].src_ip in socket) and (frms[u].src_port in socket) and (frms[u].dest_ip in socket) and (
+                            frms[u].dest_port in socket):
+                        datas.append(frms[u])
+                datas = [syn, sync_ack, ack] + datas
+                out.append(datas)
+                datas = []
+                socket = []
+
+    finished, unfinished = None, None
+    for m in range(len(out)):
+        k = 0
+        for n in range(len(out[m])):
+            frm = out[m][n]
+            if frm.reset_flag == True:
+                if finished == None:
+                    finished = m
+                k = 1
+                break
+            elif frm.fin_flag == True:
+                try:
+                    frm2 = out[m][n + 1]
+                except IndexError:
+                    break
+                if frm2.fin_flag == True:
+                    try:
+                        frm3 = out[m][n + 2]
+                    except IndexError:
+                        break
+                    if frm3.ack_flag == True:  # FIN FIN ACK
+                        if finished == None:
+                            finished = m
+                        k = 1
+                        break
+                    elif frm3.reset_flag == True:  # FIN FIN RST
+                        if finished == None:
+                            finished = m
+                        k = 1
+                        break
+                    else:
+                        if unfinished == None:
+                            unfinished = m
+                elif frm2.ack_flag == True:
+                    try:
+                        frm3 = out[m][n + 2]
+                    except IndexError:
+                        break
+                    if frm3.fin_flag == True:
+                        try:
+                            frm4 = out[m][n + 3]
+                        except IndexError:
+                            break
+                        if frm4.ack_flag == True:  # FIN ACK FIN ACK
+                            if finished == None:
+                                finished = m
+                            k = 1
+                            break
+                        elif frm4.reset_flag == True:  # FIN ACK FIN RST
+                            if finished == None:
+                                finished = m
+                            k = 1
+                            break
+                        else:
+                            if unfinished == None:
+                                unfinished = m
+                    elif frm3.reset_flag == True:  # FIN ACK RST
+                        if finished == None:
+                            finished = m
+                        k = 1
+                        break
+                    else:
+                        if unfinished == None:
+                            unfinished = m
+                elif frm2.reset_flag == True:  # FIN RST
+                    if finished == None:
+                        finished = m
+                    k = 1
+                    break
+            if n + 1 == len(out[m]) and k == 0 and unfinished == None:
+                unfinished = m
+        if unfinished != None and finished != None:
+            break
+    return out, unfinished, finished
+
+
+def format_mac(macAdress):
+    return ":".join(macAdress[i:i + 2] for i in range(0, len(macAdress), 2))
+
+def print_tcp(datas, unfin, fin,output_file):
+    output = []
+
+    if unfin is not None:
+        unfinished_data = []
+
+        for frm in datas[unfin]:
+            frame_data = {
+                "frame_number": frm.index + 1,
+                "len_frame_pcap": frm.length_api,
+                "len_frame_medium": frm.length_med,
+                "frame_type": frm.eth_type,
+                "src_mac": frm.src_mac,
+                "dst_mac": frm.dest_mac,
+                "app_protocol": frm.app_protocol,
+                "ether_type": frm.eth_type,
+                "source_ip": frm.src_ip,
+                "destination_ip": frm.dest_ip,
+                "hexa_frame": frm.hex_value_formated
+            }
+
+            flags = []
+            if frm.ack_flag:
+                flags.append("ACK")
+            if frm.push_flag:
+                flags.append("PUSH")
+            if frm.reset_flag:
+                flags.append("RESET")
+            if frm.syn_flag:
+                flags.append("SYN")
+            if frm.fin_flag:
+                flags.append("FIN")
+
+            frame_data["flags"] = flags
+            unfinished_data.append(frame_data)
+
+        output.append({"Unfinished": unfinished_data})
+    if fin is not None:
+
+        finished_data = []
+
+        for frm in datas[fin]:
+            frame_data = {
+                "frame_number": frm.index + 1,
+                "len_frame_pcap": frm.length_api,
+                "len_frame_medium": frm.length_med,
+                "frame_type": frm.eth_type,
+                "src_mac": format_mac(frm.src_mac),
+                "dst_mac": format_mac(frm.dest_mac),
+                "app_protocol": frm.app_protocol,
+                "ether_type": frm.eth_type,
+                "source_ip": frm.src_ip,
+                "destination_ip": frm.dest_ip,
+                "hexa_frame": frm.hex_value_formated
+            }
+
+            flags = []
+            if frm.ack_flag:
+                flags.append("ACK")
+            if frm.push_flag:
+                flags.append("PUSH")
+            if frm.reset_flag:
+                flags.append("RESET")
+            if frm.syn_flag:
+                flags.append("SYN")
+            if frm.fin_flag:
+                flags.append("FIN")
+
+            frame_data["flags"] = flags
+            finished_data.append(frame_data)
+
+        output.append({"Finished": finished_data})
+
+    with open(output_file, 'w') as file:
+        yaml.dump(output, file, default_flow_style=False)
 
 def main ():
 
     pcapFile = '/Users/michalhlinka/PycharmProjects/pythonProject1/vzorky_pcap_na_analyzu/trace-27.pcap' #treba cestu
-    packets = rdpcap(pcapFile)
-    filterpacket = rdpcap(pcapFile)
+    packets = scapy.rdpcap(pcapFile)
+    filterpacket = scapy.rdpcap(pcapFile)
+    frames = []
+    global syns,config,ips
+    syns,ips = [],[]
+    config = read_cfg()
+
+    x = 0
+    for pkt in filterpacket:
+        frame = Frame()
+        frame.hex_value = scapy.raw(pkt).hex()
+        frame.index = x
+        x += 1
+        start(frame,pkt)
+        formatted_hex = ' '.join([frame.hex_value[i:i + 2] for i in range(0, len(frame.hex_value), 2)])
+        formatted_hex = '\n'.join([formatted_hex[i:i + 48] for i in range(0, len(formatted_hex), 48)])
+        frame.hex_value_formated = ruamel.yaml.scalarstring.PreservedScalarString(formatted_hex)
+        frames.append(frame)
+
     packetCount = len(packets)
     packetCounter = 1
     filterCounter = 1
@@ -221,79 +546,6 @@ def main ():
 
     protocolFilter = args.protocol
 
-    # --------TCP section------------
-    tcpStreams = []
-    for frameNumber in range(0, len(packets)):
-        frame = bytes(packets[frameNumber])
-        if (getDataFromFrame(frame,12, 13, True) == 2048):
-
-            if (calculateIPv4protocol(frame) == 'TCP'):
-                tcp = get_transport_protocol(frame)
-                if (getDataFromFrame(tcp, 0, 1, True) in appMap):
-                    #print(1)
-                    if appMap.get(getDataFromFrame(tcp, 0, 1, True), 'Unknown') != protocolFilter:
-                        continue
-                else:
-                    if (getDataFromFrame(tcp, 2, 3, True) in appMap):
-                        if appMap.get(getDataFromFrame(tcp, 2, 3, True), 'Unknown') != protocolFilter:
-                            continue
-                    else:
-                        continue
-                insertToStream(tcpStreams, frameNumber, getDataFromFrame(frame, 26, 29), getDataFromFrame(frame, 30, 33), getDataFromFrame(tcp, 0, 1), getDataFromFrame(tcp, 2, 3))
-
-    buffer = 0
-    halfbuffer = 0
-    # zisti ci je komunikacia kompletna
-    for i in tcpStreams:
-        start = 0
-        end = 0
-        if (getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[0] - 1])), 13, 13, True) == 0x2) and (getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[1] - 1])), 13, 13, True) == 0x12) and getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[2] - 1])), 13, 13, True) == 0x10:
-            start = 1
-        end0 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 1] - 1])), 13, 13, True)
-        end1 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 2] - 1])), 13, 13, True)
-
-        if len(i.frames) - 3 < 0 :
-            end2 = -1
-        else:
-            end2 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 3] - 1])), 13, 13, True)
-        if len(i.frames) - 4 < 0 :
-            end3 = -1
-        else:
-            end3 = getDataFromFrame(get_transport_protocol(bytes(packets[i.frames[len(i.frames) - 4] - 1])), 13, 13, True)
-
-        #rst
-        if (end0 == 0x14)  or (end0 == 0x1):
-            end = 1
-        else:
-            # 3 way handshake
-            if (end0 == 0x10) and ((end1 == 0x11) or (end == 0x19)) \
-                and ((end2 == 0x11) or (end2 == 0x19)):
-                end = 1
-            else:
-                if (end0 == 0x10) and ((end1 == 0x11) or (end1 == 0x19)) \
-                    and (end2 == 0x10) and ((end3 == 0x11) or (end3 == 0x19)):
-                    end = 1
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # ---------frame section------------
     for packet in packets:
@@ -309,7 +561,7 @@ def main ():
         frame['frame_type'] = calculateFrameType(packet)
         frame['src_mac'] = calculateSourceMAC(packet)
         frame['dst_mac'] = calculateDestinationMAC(packet)
-        if (calculateFrameType(packet) == 'Ethernet 2'):
+        if (calculateFrameType(packet) == 'Ethernet II'):
             frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
             frame['source_ip'] = calculateIPv4source(packet)
             frame['destination_ip'] = calculateIPv4destination(packet)
@@ -336,20 +588,26 @@ def main ():
 
         frame['hexa_frame'] = ruamel.yaml.scalarstring.PreservedScalarString(hexRows)
 
-        '''hex_str = ''.join([f'{byte:02X}' for byte in packetBytes])
-        hex_array = hex_split(hex_str)
-        formatted_hex_dump = hex_dump_str(hex_array)'''
-
         frame['hexa_frame'] = hexRows
         printer['packets'].append(frame)
         # print out the packets
         packetCounter += 1
 
     if protocolFilter:
-        # skontrolujeme ci je zadany protokol platny
+        data, finished, unfinished = get_tcp_comms(frames, 443)
+        print_tcp(data, unfinished, finished, 'tcp.yaml')
+
+
+        print(protocolFilter)
+        print(appMap.get(calculateAppProtocol(packet)))
+
+
+
+        # skontrolujeme ci je zadany protol platny
         if protocolFilter in appMap.values():
             filtratedPackets = [packet for packet in packets if appMap.get(calculateAppProtocol(packet)) == protocolFilter]
             filtratedCount = len(filtratedPackets)
+            print(filtratedCount)
 
             if filtratedCount > 0:
                 filtratedOutput = {
@@ -364,7 +622,7 @@ def main ():
                     frame['frame_type'] = calculateFrameType(packet)
                     frame['src_mac'] = calculateSourceMAC(packet)
                     frame['dst_mac'] = calculateDestinationMAC(packet)
-                    if (calculateFrameType(packet) == 'Ethernet 2'):
+                    if (calculateFrameType(packet) == 'Ethernet II'):
                         frame['ether_type'] = calculateEtherType(packet, calculateFrameType(packet))
                         frame['source_ip'] = calculateIPv4source(packet)
                         frame['destination_ip'] = calculateIPv4destination(packet)
